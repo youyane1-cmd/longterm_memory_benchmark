@@ -1,0 +1,2 @@
+[console_scripts]
+ltm = longterm_memory_benchmark.cli:main

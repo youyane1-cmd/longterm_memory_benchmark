@@ -1,0 +1,99 @@
+{
+  "plan_id": "TP-P001-v7",
+  "person_id": "P001",
+  "person_summary": "用户法定姓名为林晓，现居地为苏州工业园区。用户父母居住地为青岛。用户本科毕业院校为青岛大学，本科主修专业为计算机科学与技术。用户每月房租为3500元，住房类型为租住两室一厅。用户日常通勤为地铁。用户持有手机为iPhone 14 Pro Max和iPhone 13。",
+  "round_id": "v7",
+  "horizon": "3_months",
+  "changes": [
+    {
+      "change_id": "CH01",
+      "op": "update",
+      "domain": "宠物与动物",
+      "subcategory": "宠物基本信息",
+      "subject": "饲养的宠物",
+      "change": "玄凤鹦鹉一只",
+      "reason": "上一阶段value为【橘猫一只】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH02",
+      "op": "create",
+      "domain": "宠物与动物",
+      "subcategory": "宠物健康",
+      "subject": "宠物驱虫状态",
+      "change": "橘猫已完成本月体内外驱虫",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH03",
+      "op": "update",
+      "domain": "纪念日",
+      "subcategory": "个人纪念日",
+      "subject": "入职纪念日",
+      "change": "9月1日 → 9月3日",
+      "reason": "上一阶段value为【9月1日】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH04",
+      "op": "create",
+      "domain": "纪念日",
+      "subcategory": "个人纪念日",
+      "subject": "首次独居纪念日",
+      "change": "8月18日",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH05",
+      "op": "update",
+      "domain": "教育经历",
+      "subcategory": "培训与认证",
+      "subject": "在线课程学习",
+      "change": "吴恩达深度学习专项课",
+      "reason": "上一阶段value为【Coursera机器学习课程、CS50 Python课程】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH06",
+      "op": "create",
+      "domain": "教育经历",
+      "subcategory": "学业表现",
+      "subject": "本科绩点",
+      "change": "3.4/4.0",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH07",
+      "op": "update",
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有手机",
+      "change": "iPhone 13",
+      "reason": "上一阶段value为【iPhone 15 Pro】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH08",
+      "op": "create",
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有智能手表",
+      "change": "Apple Watch Series 9",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH09",
+      "op": "update",
+      "domain": "身份与基础信息",
+      "subcategory": "联系方式",
+      "subject": "常用邮箱",
+      "change": "linxiao.work@outlook.com → linxiao.note@outlook.com",
+      "reason": "上一阶段value为【linxiao.work@outlook.com】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH10",
+      "op": "create",
+      "domain": "身份与基础信息",
+      "subcategory": "国籍归属",
+      "subject": "籍贯",
+      "change": "山东青岛",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    }
+  ]
+}

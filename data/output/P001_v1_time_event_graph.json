@@ -1,0 +1,131 @@
+{
+  "person_id": "P001",
+  "events": [
+    {
+      "event_id": "v1-EV001",
+      "time": "2023-01-04",
+      "event": "林晓在苏州工行园区附近的招商银行网点顺手补办了一张储蓄卡，方便把日常收支单独归拢管理。",
+      "goal_state": [
+        {
+          "domain": "财务与资产",
+          "subcategory": "银行账户",
+          "subject": "持有银行卡",
+          "op": "create",
+          "change": "招商银行储蓄卡"
+        }
+      ]
+    },
+    {
+      "event_id": "v1-EV002",
+      "time": "2023-01-08",
+      "event": "林晓和房东续谈租约时确认了新一轮租金，月租从3500元上调到了3700元。",
+      "goal_state": [
+        {
+          "domain": "财务与资产",
+          "subcategory": "订阅与固定支出",
+          "subject": "每月房租",
+          "op": "update",
+          "change": "3500元 → 3700元"
+        }
+      ]
+    },
+    {
+      "event_id": "v1-EV003",
+      "time": "2023-01-12",
+      "event": "林晓把旧iPhone 13挂到二手平台出掉后，顺势下单了一副AirPods Pro 2，给自己补上通勤时用的无线耳机。",
+      "goal_state": [
+        {
+          "domain": "财务与资产",
+          "subcategory": "消费支出",
+          "subject": "大额设备支出",
+          "op": "create",
+          "change": "AirPods Pro 2"
+        },
+        {
+          "domain": "数字与技术",
+          "subcategory": "设备硬件",
+          "subject": "持有手机",
+          "op": "update",
+          "change": "iPhone 13 → 空"
+        },
+        {
+          "domain": "数字与技术",
+          "subcategory": "设备硬件",
+          "subject": "持有耳机",
+          "op": "create",
+          "change": "AirPods Pro 2"
+        }
+      ]
+    },
+    {
+      "event_id": "v1-EV004",
+      "time": "2023-01-18",
+      "event": "林晓这段时间总觉得语音和电话太容易打断手头节奏，便主动把主要联系渠道改成了微信文字消息。",
+      "goal_state": [
+        {
+          "domain": "社交与通讯",
+          "subcategory": "通讯偏好",
+          "subject": "主要联系渠道",
+          "op": "create",
+          "change": "微信文字消息"
+        }
+      ]
+    },
+    {
+      "event_id": "v1-EV005",
+      "time": "2023-01-21",
+      "event": "林晓为了把零散笔记和待办收拢到一处，认真试用了Notion，并把它留作常用效率工具。",
+      "goal_state": [
+        {
+          "domain": "数字与技术",
+          "subcategory": "软件应用",
+          "subject": "常用效率工具",
+          "op": "create",
+          "change": "Notion"
+        }
+      ]
+    },
+    {
+      "event_id": "v1-EV006",
+      "time": "2023-01-24",
+      "event": "林晓在校友群里和一位同在苏州的青岛大学本科校友单独约了咖啡，聊完后把对方正式算作自己在苏州的一位同城朋友。",
+      "goal_state": [
+        {
+          "domain": "家庭与社会关系",
+          "subcategory": "朋友与社交关系",
+          "subject": "同城朋友",
+          "op": "create",
+          "change": "苏州有一位本科校友朋友"
+        }
+      ]
+    },
+    {
+      "event_id": "v1-EV007",
+      "time": "2023-01-27",
+      "event": "林晓整理自己最近的社交状态时，明确接受了目前一个人生活的节奏，把当前感情状态定为了单身。",
+      "goal_state": [
+        {
+          "domain": "家庭与社会关系",
+          "subcategory": "婚恋状态",
+          "subject": "当前感情状态",
+          "op": "create",
+          "change": "单身"
+        }
+      ]
+    },
+    {
+      "event_id": "v1-EV008",
+      "time": "2023-01-30",
+      "event": "林晓刷到不少本地生活和效率整理内容后，注册并开始常看小红书，同时也把它纳入自己会持续使用的活跃社交平台。",
+      "goal_state": [
+        {
+          "domain": "社交与通讯",
+          "subcategory": "社交平台",
+          "subject": "活跃社交平台",
+          "op": "create",
+          "change": "小红书"
+        }
+      ]
+    }
+  ]
+}

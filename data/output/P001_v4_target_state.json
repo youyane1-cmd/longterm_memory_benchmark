@@ -1,0 +1,99 @@
+{
+  "plan_id": "TP-P001-v4",
+  "person_id": "P001",
+  "person_summary": "用户法定姓名为林晓，现居地为苏州工业园区。用户父母居住地为青岛。用户本科毕业院校为青岛大学，本科主修专业为计算机科学与技术。用户每月房租为3500元，住房类型为租住两室一厅。用户日常通勤为地铁。用户持有手机为iPhone 14 Pro Max和iPhone 13。",
+  "round_id": "v4",
+  "horizon": "3_months",
+  "changes": [
+    {
+      "change_id": "CH01",
+      "op": "update",
+      "domain": "宠物与动物",
+      "subcategory": "宠物基本信息",
+      "subject": "饲养的宠物",
+      "change": "金鱼一条",
+      "reason": "上一阶段value为【橘猫一只】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH02",
+      "op": "update",
+      "domain": "宠物与动物",
+      "subcategory": "宠物健康",
+      "subject": "宠物疫苗状态",
+      "change": "橘猫已完成基础三联疫苗 → 橘猫已完成基础三联疫苗，已接种狂犬疫苗",
+      "reason": "上一阶段value为【橘猫已完成基础三联疫苗】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH03",
+      "op": "create",
+      "domain": "宠物与动物",
+      "subcategory": "宠物日常",
+      "subject": "宠物主粮品牌",
+      "change": "橘猫主粮为皇家室内成猫粮",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH04",
+      "op": "create",
+      "domain": "兴趣爱好",
+      "subcategory": "阅读书籍",
+      "subject": "正在阅读的书籍",
+      "change": "《三体》",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH05",
+      "op": "create",
+      "domain": "兴趣爱好",
+      "subcategory": "美食餐饮",
+      "subject": "偏好的菜系",
+      "change": "日料",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH06",
+      "op": "update",
+      "domain": "旅行与出行",
+      "subcategory": "交通出行方式",
+      "subject": "日常通勤",
+      "change": "地铁 → 地铁+共享单车",
+      "reason": "上一阶段value为【地铁】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH07",
+      "op": "create",
+      "domain": "旅行与出行",
+      "subcategory": "证件与签证",
+      "subject": "机动车驾驶证",
+      "change": "C2驾驶证",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH08",
+      "op": "create",
+      "domain": "健康与医疗",
+      "subcategory": "健康管理",
+      "subject": "体检频率",
+      "change": "每年一次全面体检",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH09",
+      "op": "update",
+      "domain": "纪念日",
+      "subcategory": "个人纪念日",
+      "subject": "本科毕业纪念日",
+      "change": "6月30日 → 7月1日",
+      "reason": "上一阶段value为【6月30日】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH10",
+      "op": "create",
+      "domain": "纪念日",
+      "subcategory": "个人纪念日",
+      "subject": "入职纪念日",
+      "change": "9月1日",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    }
+  ]
+}

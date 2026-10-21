@@ -1,0 +1,99 @@
+{
+  "plan_id": "TP-P001-v12",
+  "person_id": "P001",
+  "person_summary": "用户法定姓名为林晓，现居地为苏州工业园区。用户父母居住地为青岛。用户本科毕业院校为青岛大学，本科主修专业为计算机科学与技术。用户每月房租为3500元，住房类型为租住两室一厅。用户日常通勤为地铁。用户持有手机为iPhone 14 Pro Max和iPhone 13。",
+  "round_id": "v12",
+  "horizon": "3_months",
+  "changes": [
+    {
+      "change_id": "CH01",
+      "op": "update",
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有手机",
+      "change": "iPhone 13 → 空",
+      "reason": "上一阶段value为【iPhone 15 Pro、iPhone 13】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH02",
+      "op": "update",
+      "domain": "数字与技术",
+      "subcategory": "软件应用",
+      "subject": "常用效率工具",
+      "change": "飞书",
+      "reason": "上一阶段value为【Notion】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH03",
+      "op": "create",
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有平板",
+      "change": "iPad Air",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH04",
+      "op": "create",
+      "domain": "数字与技术",
+      "subcategory": "账号信息",
+      "subject": "密码管理工具",
+      "change": "1Password",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH05",
+      "op": "update",
+      "domain": "旅行与出行",
+      "subcategory": "交通出行方式",
+      "subject": "日常通勤",
+      "change": "地铁+步行 → 地铁",
+      "reason": "上一阶段value为【地铁+步行】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH06",
+      "op": "create",
+      "domain": "旅行与出行",
+      "subcategory": "旅行经历",
+      "subject": "近期旅行记录",
+      "change": "周末去了杭州",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH07",
+      "op": "update",
+      "domain": "职业与工作",
+      "subcategory": "薪酬待遇",
+      "subject": "税后月薪",
+      "change": "20500元 → 21500元",
+      "reason": "上一阶段value为【20500元】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH08",
+      "op": "create",
+      "domain": "职业与工作",
+      "subcategory": "职业状态与规划",
+      "subject": "职业发展方向",
+      "change": "继续深耕后端架构方向",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH09",
+      "op": "update",
+      "domain": "财务与资产",
+      "subcategory": "投资理财",
+      "subject": "持有基金",
+      "change": "沪深300指数基金 → 中证红利指数基金",
+      "reason": "上一阶段value为【沪深300指数基金】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH10",
+      "op": "create",
+      "domain": "信仰与价值观",
+      "subcategory": "核心价值观",
+      "subject": "消费原则",
+      "change": "优先购买耐用且长期使用的物品",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    }
+  ]
+}

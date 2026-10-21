@@ -1,0 +1,99 @@
+{
+  "plan_id": "TP-P001-v11",
+  "person_id": "P001",
+  "person_summary": "用户法定姓名为林晓，现居地为苏州工业园区。用户父母居住地为青岛。用户本科毕业院校为青岛大学，本科主修专业为计算机科学与技术。用户每月房租为3500元，住房类型为租住两室一厅。用户日常通勤为地铁。用户持有手机为iPhone 14 Pro Max和iPhone 13。",
+  "round_id": "v11",
+  "horizon": "3_months",
+  "changes": [
+    {
+      "change_id": "CH01",
+      "op": "update",
+      "domain": "法律与记录",
+      "subcategory": "法律文件",
+      "subject": "现行租房合同",
+      "change": "苏州工业园区两室一厅续租合同 → 苏州工业园区两室一厅转为月付续租合同",
+      "reason": "上一阶段value为【苏州工业园区两室一厅续租合同】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH02",
+      "op": "create",
+      "domain": "法律与记录",
+      "subcategory": "法律文件",
+      "subject": "电子签名授权书",
+      "change": "租房合同电子签名授权书",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH03",
+      "op": "update",
+      "domain": "健康与医疗",
+      "subcategory": "身体指标",
+      "subject": "体重",
+      "change": "64kg → 63kg",
+      "reason": "上一阶段value为【64kg】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH04",
+      "op": "create",
+      "domain": "健康与医疗",
+      "subcategory": "过敏信息",
+      "subject": "药物过敏",
+      "change": "青霉素",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH05",
+      "op": "update",
+      "domain": "兴趣爱好",
+      "subcategory": "阅读书籍",
+      "subject": "正在阅读的书籍",
+      "change": "《变量》 → 《芯片战争》",
+      "reason": "上一阶段value为【《变量》】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH06",
+      "op": "create",
+      "domain": "兴趣爱好",
+      "subcategory": "户外活动",
+      "subject": "固定户外项目",
+      "change": "周末骑行",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH07",
+      "op": "update",
+      "domain": "社交与通讯",
+      "subcategory": "社交平台",
+      "subject": "活跃社交平台",
+      "change": "微信视频号 → 空",
+      "reason": "上一阶段value为【小红书、微信视频号】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH08",
+      "op": "create",
+      "domain": "社交与通讯",
+      "subcategory": "社群与圈子",
+      "subject": "加入的运动社群",
+      "change": "苏州周末骑行群",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH09",
+      "op": "update",
+      "domain": "家庭与社会关系",
+      "subcategory": "关系状态与质量",
+      "subject": "与父母联系频率",
+      "change": "每周视频通话一次 → 每周视频通话两次",
+      "reason": "上一阶段value为【每周视频通话一次】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH10",
+      "op": "create",
+      "domain": "家庭与社会关系",
+      "subcategory": "家庭事件",
+      "subject": "近期家庭聚会",
+      "change": "父母来苏州短住一次",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    }
+  ]
+}

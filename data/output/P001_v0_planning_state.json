@@ -1,0 +1,170 @@
+{
+  "person_id": "P001",
+  "person_summary": "用户法定姓名为林晓，现居地为苏州工业园区。用户父母居住地为青岛。用户本科毕业院校为青岛大学，本科主修专业为计算机科学与技术。用户每月房租为3500元，住房类型为租住两室一厅。用户日常通勤为地铁。用户持有手机为iPhone 14 Pro Max和iPhone 13。",
+  "round_id": "v0",
+  "states": [
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "姓名称谓",
+      "subject": "法定姓名",
+      "mutable": false,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "林晓"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "居住地址",
+      "subject": "现居地",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "苏州工业园区"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "父母信息",
+      "subject": "父母居住地",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "青岛"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "学校与就读",
+      "subject": "本科毕业院校",
+      "mutable": false,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "青岛大学"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "专业与学位",
+      "subject": "本科主修专业",
+      "mutable": false,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "计算机科学与技术"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "订阅与固定支出",
+      "subject": "每月房租",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "3500元"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "旅行与出行",
+      "subcategory": "交通出行方式",
+      "subject": "日常通勤",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "地铁"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "居住与房产",
+      "subcategory": "房屋类型与产权",
+      "subject": "住房类型",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "租住两室一厅"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有手机",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "iPhone 14 Pro Max",
+            "iPhone 13"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "person_id": "P001",
+  "round_id": "v2",
+  "states": [
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "姓名称谓",
+      "subject": "法定姓名",
+      "mutable": false,
+      "value": [
+        "林晓"
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "居住地址",
+      "subject": "现居地",
+      "mutable": true,
+      "value": [
+        "苏州工业园区"
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "父母信息",
+      "subject": "父母居住地",
+      "mutable": true,
+      "value": [
+        "青岛"
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "学校与就读",
+      "subject": "本科毕业院校",
+      "mutable": false,
+      "value": [
+        "青岛大学"
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "专业与学位",
+      "subject": "本科主修专业",
+      "mutable": false,
+      "value": [
+        "计算机科学与技术"
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "订阅与固定支出",
+      "subject": "每月房租",
+      "mutable": true,
+      "value": [
+        "3900元"
+      ]
+    },
+    {
+      "domain": "旅行与出行",
+      "subcategory": "交通出行方式",
+      "subject": "日常通勤",
+      "mutable": true,
+      "value": [
+        "地铁"
+      ]
+    },
+    {
+      "domain": "居住与房产",
+      "subcategory": "房屋类型与产权",
+      "subject": "住房类型",
+      "mutable": true,
+      "value": [
+        "租住两室一厅"
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有手机",
+      "mutable": true,
+      "value": [
+        "iPhone 14 Pro Max"
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "银行账户",
+      "subject": "持有银行卡",
+      "mutable": true,
+      "value": [
+        "招商银行储蓄卡",
+        "建设银行储蓄卡"
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "消费支出",
+      "subject": "大额设备支出",
+      "mutable": true,
+      "value": [
+        "AirPods Pro 2"
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "社交平台",
+      "subject": "活跃社交平台",
+      "mutable": true,
+      "value": [
+        "小红书"
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "通讯偏好",
+      "subject": "主要联系渠道",
+      "mutable": true,
+      "value": [
+        "微信文字消息"
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有耳机",
+      "mutable": true,
+      "value": [
+        "AirPods Pro 2"
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "软件应用",
+      "subject": "常用效率工具",
+      "mutable": true,
+      "value": [
+        "Notion"
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "婚恋状态",
+      "subject": "当前感情状态",
+      "mutable": true,
+      "value": [
+        "单身"
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "朋友与社交关系",
+      "subject": "同城朋友",
+      "mutable": true,
+      "value": [
+        "苏州有一位本科校友朋友"
+      ]
+    },
+    {
+      "domain": "宠物与动物",
+      "subcategory": "宠物基本信息",
+      "subject": "饲养的宠物",
+      "mutable": true,
+      "value": [
+        "橘猫一只"
+      ]
+    },
+    {
+      "domain": "宠物与动物",
+      "subcategory": "宠物健康",
+      "subject": "宠物疫苗状态",
+      "mutable": true,
+      "value": [
+        "橘猫已完成基础三联疫苗"
+      ]
+    },
+    {
+      "domain": "职业与工作",
+      "subcategory": "职业经历",
+      "subject": "当前职位",
+      "mutable": true,
+      "value": [
+        "互联网公司后端开发工程师"
+      ]
+    },
+    {
+      "domain": "职业与工作",
+      "subcategory": "薪酬待遇",
+      "subject": "税后月薪",
+      "mutable": true,
+      "value": [
+        "18000元"
+      ]
+    },
+    {
+      "domain": "纪念日",
+      "subcategory": "个人纪念日",
+      "subject": "本科毕业纪念日",
+      "mutable": true,
+      "value": [
+        "6月30日"
+      ]
+    },
+    {
+      "domain": "纪念日",
+      "subcategory": "关系纪念日",
+      "subject": "父母结婚纪念日",
+      "mutable": true,
+      "value": [
+        "10月12日"
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "培训与认证",
+      "subject": "在线课程学习",
+      "mutable": true,
+      "value": [
+        "Coursera机器学习课程"
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "学校与就读",
+      "subject": "毕业证书状态",
+      "mutable": true,
+      "value": [
+        "本科毕业证已领取"
+      ]
+    }
+  ]
+}

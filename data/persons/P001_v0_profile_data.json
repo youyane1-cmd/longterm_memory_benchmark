@@ -1,0 +1,69 @@
+{
+  "person_id": "P001",
+  "round_id": "v0",
+  "states": [
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "姓名称谓",
+      "subject": "法定姓名",
+      "value": ["林晓"],
+      "mutable": false
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "居住地址",
+      "subject": "现居地",
+      "value": ["苏州工业园区"],
+      "mutable": true
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "父母信息",
+      "subject": "父母居住地",
+      "value": ["青岛"],
+      "mutable": true
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "学校与就读",
+      "subject": "本科毕业院校",
+      "value": ["青岛大学"],
+      "mutable": false
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "专业与学位",
+      "subject": "本科主修专业",
+      "value": ["计算机科学与技术"],
+      "mutable": false
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "订阅与固定支出",
+      "subject": "每月房租",
+      "value": ["3500元"],
+      "mutable": true
+    },
+    {
+      "domain": "旅行与出行",
+      "subcategory": "交通出行方式",
+      "subject": "日常通勤",
+      "value": ["地铁"],
+      "mutable": true
+    },
+    {
+      "domain": "居住与房产",
+      "subcategory": "房屋类型与产权",
+      "subject": "住房类型",
+      "value": ["租住两室一厅"],
+      "mutable": true
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有手机",
+      "value": ["iPhone 14 Pro Max", "iPhone 13"],
+      "mutable": true
+    }
+  ]
+}

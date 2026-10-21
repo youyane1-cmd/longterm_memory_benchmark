@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "longterm-memory-benchmark"
+version = "0.1.0"
+description = "长期记忆 Benchmark：从人物种子生成可追溯对话，再生成带证据的问答"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openai",
+    "pydantic",
+    "azure-identity",
+    "python-dotenv",
+    "pyyaml",
+]
+
+[project.scripts]
+ltm = "longterm_memory_benchmark.cli:main"
+
+[tool.setuptools]
+package-dir = {"longterm_memory_benchmark" = "."}
+packages = [
+    "longterm_memory_benchmark",
+    "longterm_memory_benchmark.src",
+    "longterm_memory_benchmark.src.dialogue_gen",
+    "longterm_memory_benchmark.src.dialogue_gen.dialogue_prompt",
+    "longterm_memory_benchmark.src.dialogue_gen.dialogue_prompt.dialogue",
+    "longterm_memory_benchmark.src.dialogue_gen.dialogue_prompt.profile",
+    "longterm_memory_benchmark.src.dialogue_gen.dialogue_prompt.target_state_plan",
+    "longterm_memory_benchmark.src.dialogue_gen.dialogue_prompt.time_event_graph",
+    "longterm_memory_benchmark.src.qa_gen",
+    "longterm_memory_benchmark.src.qa_gen.qa_prompt",
+    "longterm_memory_benchmark.src.qa_gen.qa_prompt.IE",
+    "longterm_memory_benchmark.src.qa_gen.qa_prompt.KU",
+    "longterm_memory_benchmark.src.qa_gen.qa_prompt.OD",
+    "longterm_memory_benchmark.src.qa_gen.qa_prompt.RJ",
+    "longterm_memory_benchmark.src.qa_gen.qa_prompt.TR",
+    "longterm_memory_benchmark.src.utils",
+]
+
+[tool.setuptools.package-data]
+longterm_memory_benchmark = ["data/persons/*"]

@@ -1,0 +1,641 @@
+{
+  "person_id": "P001",
+  "round_id": "v11",
+  "states": [
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "姓名称谓",
+      "subject": "法定姓名",
+      "mutable": false,
+      "value": [
+        "林晓"
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "居住地址",
+      "subject": "现居地",
+      "mutable": true,
+      "value": [
+        "苏州高新区"
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "父母信息",
+      "subject": "父母居住地",
+      "mutable": true,
+      "value": [
+        "青岛"
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "学校与就读",
+      "subject": "本科毕业院校",
+      "mutable": false,
+      "value": [
+        "青岛大学"
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "专业与学位",
+      "subject": "本科主修专业",
+      "mutable": false,
+      "value": [
+        "计算机科学与技术"
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "订阅与固定支出",
+      "subject": "每月房租",
+      "mutable": true,
+      "value": [
+        "3500元"
+      ]
+    },
+    {
+      "domain": "旅行与出行",
+      "subcategory": "交通出行方式",
+      "subject": "日常通勤",
+      "mutable": true,
+      "value": [
+        "地铁+步行"
+      ]
+    },
+    {
+      "domain": "居住与房产",
+      "subcategory": "房屋类型与产权",
+      "subject": "住房类型",
+      "mutable": true,
+      "value": [
+        "租住两室一厅"
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有手机",
+      "mutable": true,
+      "value": [
+        "iPhone 15 Pro",
+        "iPhone 13"
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "银行账户",
+      "subject": "持有银行卡",
+      "mutable": true,
+      "value": [
+        "招商银行储蓄卡",
+        "建设银行储蓄卡",
+        "工商银行储蓄卡"
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "消费支出",
+      "subject": "大额设备支出",
+      "mutable": true,
+      "value": [
+        "AirPods Pro 2"
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "社交平台",
+      "subject": "活跃社交平台",
+      "mutable": true,
+      "value": [
+        "小红书"
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "通讯偏好",
+      "subject": "主要联系渠道",
+      "mutable": true,
+      "value": [
+        "微信文字消息"
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有耳机",
+      "mutable": true,
+      "value": [
+        "AirPods Pro 2"
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "软件应用",
+      "subject": "常用效率工具",
+      "mutable": true,
+      "value": [
+        "Notion"
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "婚恋状态",
+      "subject": "当前感情状态",
+      "mutable": true,
+      "value": [
+        "单身"
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "朋友与社交关系",
+      "subject": "同城朋友",
+      "mutable": true,
+      "value": [
+        "苏州有一位本科校友朋友",
+        "苏州有一位公司同事朋友"
+      ]
+    },
+    {
+      "domain": "宠物与动物",
+      "subcategory": "宠物基本信息",
+      "subject": "饲养的宠物",
+      "mutable": true,
+      "value": [
+        "橘猫一只"
+      ]
+    },
+    {
+      "domain": "宠物与动物",
+      "subcategory": "宠物健康",
+      "subject": "宠物疫苗状态",
+      "mutable": true,
+      "value": [
+        "橘猫已完成基础三联疫苗，已接种狂犬疫苗"
+      ]
+    },
+    {
+      "domain": "职业与工作",
+      "subcategory": "职业经历",
+      "subject": "当前职位",
+      "mutable": true,
+      "value": [
+        "互联网公司资深后端开发工程师"
+      ]
+    },
+    {
+      "domain": "职业与工作",
+      "subcategory": "薪酬待遇",
+      "subject": "税后月薪",
+      "mutable": true,
+      "value": [
+        "20500元"
+      ]
+    },
+    {
+      "domain": "纪念日",
+      "subcategory": "个人纪念日",
+      "subject": "本科毕业纪念日",
+      "mutable": true,
+      "value": [
+        "7月1日"
+      ]
+    },
+    {
+      "domain": "纪念日",
+      "subcategory": "关系纪念日",
+      "subject": "父母结婚纪念日",
+      "mutable": true,
+      "value": [
+        "10月12日"
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "培训与认证",
+      "subject": "在线课程学习",
+      "mutable": true,
+      "value": [
+        "Coursera机器学习课程",
+        "CS50 Python课程"
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "学校与就读",
+      "subject": "毕业证书状态",
+      "mutable": true,
+      "value": [
+        "本科毕业证已领取"
+      ]
+    },
+    {
+      "domain": "信仰与价值观",
+      "subcategory": "核心价值观",
+      "subject": "生活优先级",
+      "mutable": true,
+      "value": [
+        "健康与稳定优先于职业晋升速度"
+      ]
+    },
+    {
+      "domain": "信仰与价值观",
+      "subcategory": "政治倾向",
+      "subject": "公共议题关注",
+      "mutable": true,
+      "value": [
+        "关注租房保障与居住成本"
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "培训与认证",
+      "subject": "认证考试结果",
+      "mutable": true,
+      "value": [
+        "大学英语六级已通过"
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "联系方式",
+      "subject": "常用邮箱",
+      "mutable": true,
+      "value": [
+        "linxiao.note@outlook.com"
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "关系状态与质量",
+      "subject": "与父母联系频率",
+      "mutable": true,
+      "value": [
+        "每周视频通话两次"
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "财务规划",
+      "subject": "月度储蓄目标",
+      "mutable": true,
+      "value": [
+        "每月固定储蓄3000元"
+      ]
+    },
+    {
+      "domain": "宠物与动物",
+      "subcategory": "宠物日常",
+      "subject": "宠物主粮品牌",
+      "mutable": true,
+      "value": [
+        "橘猫主粮为渴望室内猫粮"
+      ]
+    },
+    {
+      "domain": "兴趣爱好",
+      "subcategory": "阅读书籍",
+      "subject": "正在阅读的书籍",
+      "mutable": true,
+      "value": [
+        "《芯片战争》"
+      ]
+    },
+    {
+      "domain": "兴趣爱好",
+      "subcategory": "美食餐饮",
+      "subject": "偏好的菜系",
+      "mutable": true,
+      "value": [
+        "日料"
+      ]
+    },
+    {
+      "domain": "旅行与出行",
+      "subcategory": "证件与签证",
+      "subject": "机动车驾驶证",
+      "mutable": true,
+      "value": [
+        "C2驾驶证"
+      ]
+    },
+    {
+      "domain": "健康与医疗",
+      "subcategory": "健康管理",
+      "subject": "体检频率",
+      "mutable": true,
+      "value": [
+        "每半年一次全面体检"
+      ]
+    },
+    {
+      "domain": "纪念日",
+      "subcategory": "个人纪念日",
+      "subject": "入职纪念日",
+      "mutable": true,
+      "value": [
+        "9月3日"
+      ]
+    },
+    {
+      "domain": "健康与医疗",
+      "subcategory": "身体指标",
+      "subject": "体重",
+      "mutable": true,
+      "value": [
+        "63kg"
+      ]
+    },
+    {
+      "domain": "健康与医疗",
+      "subcategory": "生物特征",
+      "subject": "血型",
+      "mutable": true,
+      "value": [
+        "O型血"
+      ]
+    },
+    {
+      "domain": "信仰与价值观",
+      "subcategory": "宗教信仰",
+      "subject": "宗教活动参与",
+      "mutable": true,
+      "value": [
+        "偶尔去寺庙祈福"
+      ]
+    },
+    {
+      "domain": "旅行与出行",
+      "subcategory": "酒店住宿",
+      "subject": "住宿偏好",
+      "mutable": true,
+      "value": [
+        "优先选择地铁站附近的连锁商务酒店"
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "网络服务",
+      "subject": "云存储服务",
+      "mutable": true,
+      "value": [
+        "iCloud+"
+      ]
+    },
+    {
+      "domain": "生活习惯",
+      "subcategory": "作息规律",
+      "subject": "工作日起床时间",
+      "mutable": true,
+      "value": [
+        "7:00起床"
+      ]
+    },
+    {
+      "domain": "生活习惯",
+      "subcategory": "饮食习惯",
+      "subject": "咖啡习惯",
+      "mutable": true,
+      "value": [
+        "工作日每天一杯美式咖啡"
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "个性特质",
+      "subject": "性格测评结果",
+      "mutable": true,
+      "value": [
+        "INTJ"
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "外貌特征",
+      "subject": "佩戴习惯",
+      "mutable": true,
+      "value": [
+        "日常戴黑框眼镜"
+      ]
+    },
+    {
+      "domain": "宠物与动物",
+      "subcategory": "宠物健康",
+      "subject": "宠物驱虫状态",
+      "mutable": true,
+      "value": [
+        "橘猫已完成本月体内外驱虫"
+      ]
+    },
+    {
+      "domain": "纪念日",
+      "subcategory": "个人纪念日",
+      "subject": "首次独居纪念日",
+      "mutable": true,
+      "value": [
+        "8月18日"
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "学业表现",
+      "subject": "本科绩点",
+      "mutable": true,
+      "value": [
+        "3.4/4.0"
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有智能手表",
+      "mutable": true,
+      "value": [
+        "Apple Watch Series 9"
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "国籍归属",
+      "subject": "籍贯",
+      "mutable": true,
+      "value": [
+        "山东青岛"
+      ]
+    },
+    {
+      "domain": "居住与房产",
+      "subcategory": "装修与家居",
+      "subject": "书桌配置",
+      "mutable": true,
+      "value": [
+        "升降书桌"
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "保险保障",
+      "subject": "医疗保险",
+      "mutable": true,
+      "value": [
+        "百万医疗险"
+      ]
+    },
+    {
+      "domain": "生活习惯",
+      "subcategory": "运动习惯",
+      "subject": "固定运动",
+      "mutable": true,
+      "value": [
+        "每周游泳两次"
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "培训与认证",
+      "subject": "职业证书",
+      "mutable": true,
+      "value": [
+        "Python三级证书"
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "联系方式",
+      "subject": "备用邮箱",
+      "mutable": true,
+      "value": [
+        "linxiao.backup@gmail.com"
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "社群与圈子",
+      "subject": "加入的校友社群",
+      "mutable": true,
+      "value": [
+        "青岛大学苏州校友群"
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "社交平台",
+      "subject": "内容发布主题",
+      "mutable": true,
+      "value": [
+        "通勤与城市生活记录"
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "投资理财",
+      "subject": "持有基金",
+      "mutable": true,
+      "value": [
+        "沪深300指数基金"
+      ]
+    },
+    {
+      "domain": "法律与记录",
+      "subcategory": "法律文件",
+      "subject": "现行租房合同",
+      "mutable": true,
+      "value": [
+        "苏州工业园区两室一厅转为月付续租合同"
+      ]
+    },
+    {
+      "domain": "职业与工作",
+      "subcategory": "职业资质",
+      "subject": "持有的职业认证",
+      "mutable": true,
+      "value": [
+        "PMP认证"
+      ]
+    },
+    {
+      "domain": "宠物与动物",
+      "subcategory": "宠物日常",
+      "subject": "宠物玩具偏好",
+      "mutable": true,
+      "value": [
+        "橘猫偏好逗猫棒"
+      ]
+    },
+    {
+      "domain": "居住与房产",
+      "subcategory": "家电设备",
+      "subject": "新增厨房电器",
+      "mutable": true,
+      "value": [
+        "空气炸锅"
+      ]
+    },
+    {
+      "domain": "兴趣爱好",
+      "subcategory": "数字内容消费",
+      "subject": "订阅的播客",
+      "mutable": true,
+      "value": [
+        "《科技早知道》"
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "社群与圈子",
+      "subject": "加入的兴趣社群",
+      "mutable": true,
+      "value": [
+        "苏州地铁通勤交流群"
+      ]
+    },
+    {
+      "domain": "法律与记录",
+      "subcategory": "法律文件",
+      "subject": "电子签名授权书",
+      "mutable": true,
+      "value": [
+        "租房合同电子签名授权书"
+      ]
+    },
+    {
+      "domain": "健康与医疗",
+      "subcategory": "过敏信息",
+      "subject": "药物过敏",
+      "mutable": true,
+      "value": [
+        "青霉素"
+      ]
+    },
+    {
+      "domain": "兴趣爱好",
+      "subcategory": "户外活动",
+      "subject": "固定户外项目",
+      "mutable": true,
+      "value": [
+        "周末骑行"
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "社群与圈子",
+      "subject": "加入的运动社群",
+      "mutable": true,
+      "value": [
+        "苏州周末骑行群"
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "家庭事件",
+      "subject": "近期家庭聚会",
+      "mutable": true,
+      "value": [
+        "父母来苏州短住一次"
+      ]
+    }
+  ]
+}

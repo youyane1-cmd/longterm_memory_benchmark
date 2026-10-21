@@ -1,0 +1,775 @@
+{
+  "person_id": "P001",
+  "events": [
+    {
+      "event_id": "v1-EV001",
+      "time": "2023-01-04",
+      "event": "林晓在苏州工行园区附近的招商银行网点顺手补办了一张储蓄卡，方便把日常收支单独归拢管理。",
+      "goal_state": [
+        {
+          "domain": "财务与资产",
+          "subcategory": "银行账户",
+          "subject": "持有银行卡",
+          "op": "create",
+          "change": "招商银行储蓄卡"
+        }
+      ]
+    },
+    {
+      "event_id": "v1-EV002",
+      "time": "2023-01-08",
+      "event": "林晓和房东续谈租约时确认了新一轮租金，月租从3500元上调到了3700元。",
+      "goal_state": [
+        {
+          "domain": "财务与资产",
+          "subcategory": "订阅与固定支出",
+          "subject": "每月房租",
+          "op": "update",
+          "change": "3500元 → 3700元"
+        }
+      ]
+    },
+    {
+      "event_id": "v1-EV003",
+      "time": "2023-01-12",
+      "event": "林晓把旧iPhone 13挂到二手平台出掉后，顺势下单了一副AirPods Pro 2，给自己补上通勤时用的无线耳机。",
+      "goal_state": [
+        {
+          "domain": "财务与资产",
+          "subcategory": "消费支出",
+          "subject": "大额设备支出",
+          "op": "create",
+          "change": "AirPods Pro 2"
+        },
+        {
+          "domain": "数字与技术",
+          "subcategory": "设备硬件",
+          "subject": "持有手机",
+          "op": "update",
+          "change": "iPhone 13 → 空"
+        },
+        {
+          "domain": "数字与技术",
+          "subcategory": "设备硬件",
+          "subject": "持有耳机",
+          "op": "create",
+          "change": "AirPods Pro 2"
+        }
+      ]
+    },
+    {
+      "event_id": "v1-EV004",
+      "time": "2023-01-18",
+      "event": "林晓这段时间总觉得语音和电话太容易打断手头节奏，便主动把主要联系渠道改成了微信文字消息。",
+      "goal_state": [
+        {
+          "domain": "社交与通讯",
+          "subcategory": "通讯偏好",
+          "subject": "主要联系渠道",
+          "op": "create",
+          "change": "微信文字消息"
+        }
+      ]
+    },
+    {
+      "event_id": "v1-EV005",
+      "time": "2023-01-21",
+      "event": "林晓为了把零散笔记和待办收拢到一处，认真试用了Notion，并把它留作常用效率工具。",
+      "goal_state": [
+        {
+          "domain": "数字与技术",
+          "subcategory": "软件应用",
+          "subject": "常用效率工具",
+          "op": "create",
+          "change": "Notion"
+        }
+      ]
+    },
+    {
+      "event_id": "v1-EV006",
+      "time": "2023-01-24",
+      "event": "林晓在校友群里和一位同在苏州的青岛大学本科校友单独约了咖啡，聊完后把对方正式算作自己在苏州的一位同城朋友。",
+      "goal_state": [
+        {
+          "domain": "家庭与社会关系",
+          "subcategory": "朋友与社交关系",
+          "subject": "同城朋友",
+          "op": "create",
+          "change": "苏州有一位本科校友朋友"
+        }
+      ]
+    },
+    {
+      "event_id": "v1-EV007",
+      "time": "2023-01-27",
+      "event": "林晓整理自己最近的社交状态时，明确接受了目前一个人生活的节奏，把当前感情状态定为了单身。",
+      "goal_state": [
+        {
+          "domain": "家庭与社会关系",
+          "subcategory": "婚恋状态",
+          "subject": "当前感情状态",
+          "op": "create",
+          "change": "单身"
+        }
+      ]
+    },
+    {
+      "event_id": "v1-EV008",
+      "time": "2023-01-30",
+      "event": "林晓刷到不少本地生活和效率整理内容后，注册并开始常看小红书，同时也把它纳入自己会持续使用的活跃社交平台。",
+      "goal_state": [
+        {
+          "domain": "社交与通讯",
+          "subcategory": "社交平台",
+          "subject": "活跃社交平台",
+          "op": "create",
+          "change": "小红书"
+        }
+      ]
+    },
+    {
+      "event_id": "v2-EV001",
+      "time": "2023-02-03",
+      "event": "林晓在整理个人资料时，把本科毕业纪念日记为6月30日，又顺手补记下父母的结婚纪念日是10月12日。",
+      "goal_state": [
+        {
+          "domain": "纪念日",
+          "subcategory": "个人纪念日",
+          "subject": "本科毕业纪念日",
+          "op": "create",
+          "change": "6月30日"
+        },
+        {
+          "domain": "纪念日",
+          "subcategory": "关系纪念日",
+          "subject": "父母结婚纪念日",
+          "op": "create",
+          "change": "10月12日"
+        }
+      ]
+    },
+    {
+      "event_id": "v2-EV002",
+      "time": "2023-02-06",
+      "event": "林晓参加完面试流程后确认入职一家互联网公司，岗位定为后端开发工程师，薪资邮件里也明确写明税后月薪为18000元。",
+      "goal_state": [
+        {
+          "domain": "职业与工作",
+          "subcategory": "职业经历",
+          "subject": "当前职位",
+          "op": "create",
+          "change": "互联网公司后端开发工程师"
+        },
+        {
+          "domain": "职业与工作",
+          "subcategory": "薪酬待遇",
+          "subject": "税后月薪",
+          "op": "create",
+          "change": "18000元"
+        }
+      ]
+    },
+    {
+      "event_id": "v2-EV003",
+      "time": "2023-02-10",
+      "event": "林晓和房东重新核对续租条款后，接受了房租上调，月租金额改成3900元。",
+      "goal_state": [
+        {
+          "domain": "财务与资产",
+          "subcategory": "订阅与固定支出",
+          "subject": "每月房租",
+          "op": "update",
+          "change": "3700元 → 3900元"
+        }
+      ]
+    },
+    {
+      "event_id": "v2-EV004",
+      "time": "2023-02-13",
+      "event": "林晓去银行柜台补办并启用了建设银行储蓄卡，把这张卡纳入自己常用银行卡。",
+      "goal_state": [
+        {
+          "domain": "财务与资产",
+          "subcategory": "银行账户",
+          "subject": "持有银行卡",
+          "op": "update",
+          "change": "建设银行储蓄卡"
+        }
+      ]
+    },
+    {
+      "event_id": "v2-EV005",
+      "time": "2023-02-18",
+      "event": "林晓在领养机构看过几只猫后带回一只橘猫，当天还按要求带它去宠物医院做完基础三联疫苗。",
+      "goal_state": [
+        {
+          "domain": "宠物与动物",
+          "subcategory": "宠物基本信息",
+          "subject": "饲养的宠物",
+          "op": "create",
+          "change": "橘猫一只"
+        },
+        {
+          "domain": "宠物与动物",
+          "subcategory": "宠物健康",
+          "subject": "宠物疫苗状态",
+          "op": "create",
+          "change": "橘猫已完成基础三联疫苗"
+        }
+      ]
+    },
+    {
+      "event_id": "v2-EV006",
+      "time": "2023-02-22",
+      "event": "林晓把Coursera上的机器学习课程加入了自己的在线学习清单，准备按下班后的节奏系统跟学。",
+      "goal_state": [
+        {
+          "domain": "教育经历",
+          "subcategory": "培训与认证",
+          "subject": "在线课程学习",
+          "op": "create",
+          "change": "Coursera机器学习课程"
+        }
+      ]
+    },
+    {
+      "event_id": "v2-EV007",
+      "time": "2023-02-27",
+      "event": "林晓回青岛办事时顺路到学校领取了本科毕业证，并把证书状态更新为已领取。",
+      "goal_state": [
+        {
+          "domain": "教育经历",
+          "subcategory": "学校与就读",
+          "subject": "毕业证书状态",
+          "op": "create",
+          "change": "本科毕业证已领取"
+        }
+      ]
+    },
+    {
+      "event_id": "v3-EV001",
+      "time": "2023-03-04",
+      "event": "林晓在一次下班后久站等地铁时明显感觉身体吃不消，回家后认真梳理最近的作息取舍，把生活优先级改成了健康优先于加班收入。",
+      "goal_state": [
+        {
+          "domain": "信仰与价值观",
+          "subcategory": "核心价值观",
+          "subject": "生活优先级",
+          "op": "create",
+          "change": "健康优先于加班收入"
+        }
+      ]
+    },
+    {
+      "event_id": "v3-EV002",
+      "time": "2023-03-06",
+      "event": "林晓连续几天通勤时留意换乘拥挤和到站效率，还专门翻看了苏州本地交通讨论，从此开始持续关注城市公共交通与通勤效率。",
+      "goal_state": [
+        {
+          "domain": "信仰与价值观",
+          "subcategory": "政治倾向",
+          "subject": "公共议题关注",
+          "op": "create",
+          "change": "关注城市公共交通与通勤效率"
+        }
+      ]
+    },
+    {
+      "event_id": "v3-EV003",
+      "time": "2023-03-09",
+      "event": "林晓整理个人学习清单时，在已有的 Coursera 机器学习课之外，把工作日晚间的学习入口改成了 CS50 Python 课程。",
+      "goal_state": [
+        {
+          "domain": "教育经历",
+          "subcategory": "培训与认证",
+          "subject": "在线课程学习",
+          "op": "update",
+          "change": "CS50 Python课程"
+        }
+      ]
+    },
+    {
+      "event_id": "v3-EV004",
+      "time": "2023-03-12",
+      "event": "林晓查收成绩与证书信息后，确认自己的大学英语六级已经通过，并把这项认证结果记入个人资料。",
+      "goal_state": [
+        {
+          "domain": "教育经历",
+          "subcategory": "培训与认证",
+          "subject": "认证考试结果",
+          "op": "create",
+          "change": "大学英语六级已通过"
+        }
+      ]
+    },
+    {
+      "event_id": "v3-EV005",
+      "time": "2023-03-15",
+      "event": "林晓为了减少通勤折腾，和房东办妥退租、在苏州高新区签下新住处后搬了过去，现居地随之改为苏州高新区。",
+      "goal_state": [
+        {
+          "domain": "身份与基础信息",
+          "subcategory": "居住地址",
+          "subject": "现居地",
+          "op": "update",
+          "change": "苏州工业园区 → 苏州高新区"
+        }
+      ]
+    },
+    {
+      "event_id": "v3-EV006",
+      "time": "2023-03-18",
+      "event": "林晓在整理求职与日常联络渠道时，专门注册并启用了linxiao.work@outlook.com作为常用邮箱。",
+      "goal_state": [
+        {
+          "domain": "身份与基础信息",
+          "subcategory": "联系方式",
+          "subject": "常用邮箱",
+          "op": "create",
+          "change": "linxiao.work@outlook.com"
+        }
+      ]
+    },
+    {
+      "event_id": "v3-EV007",
+      "time": "2023-03-21",
+      "event": "林晓和一位常一起吃饭、下班顺路聊天的同事越走越近，正式把对方看作自己在苏州的一位同城朋友。",
+      "goal_state": [
+        {
+          "domain": "家庭与社会关系",
+          "subcategory": "朋友与社交关系",
+          "subject": "同城朋友",
+          "op": "update",
+          "change": "苏州有一位公司同事朋友"
+        }
+      ]
+    },
+    {
+      "event_id": "v3-EV008",
+      "time": "2023-03-24",
+      "event": "林晓和父母通话时觉得只靠零散消息不够踏实，随后主动约定改为每周固定视频通话一次。",
+      "goal_state": [
+        {
+          "domain": "家庭与社会关系",
+          "subcategory": "关系状态与质量",
+          "subject": "与父母联系频率",
+          "op": "create",
+          "change": "每周视频通话一次"
+        }
+      ]
+    },
+    {
+      "event_id": "v3-EV009",
+      "time": "2023-03-27",
+      "event": "林晓去银行柜台整理日常账户使用习惯，在已有银行卡之外，把中国银行储蓄卡也归到常用。",
+      "goal_state": [
+        {
+          "domain": "财务与资产",
+          "subcategory": "银行账户",
+          "subject": "持有银行卡",
+          "op": "update",
+          "change": "中国银行储蓄卡"
+        }
+      ]
+    },
+    {
+      "event_id": "v3-EV010",
+      "time": "2023-03-30",
+      "event": "林晓月底复盘开支后，按房租和日常消费重新算了一遍结余，给自己定下每月固定储蓄3000元的目标。",
+      "goal_state": [
+        {
+          "domain": "财务与资产",
+          "subcategory": "财务规划",
+          "subject": "月度储蓄目标",
+          "op": "create",
+          "change": "每月固定储蓄3000元"
+        }
+      ]
+    },
+    {
+      "event_id": "v4-EV001",
+      "time": "2023-04-03",
+      "event": "林晓买了一条金鱼带回家，放在刚腾出来的台面上，和家里的橘猫一起养。",
+      "goal_state": [
+        {
+          "domain": "宠物与动物",
+          "subcategory": "宠物基本信息",
+          "subject": "饲养的宠物",
+          "op": "update",
+          "change": "金鱼一条"
+        }
+      ]
+    },
+    {
+      "event_id": "v4-EV002",
+      "time": "2023-04-06",
+      "event": "林晓在通勤高峰被地铁出站后的步行耗时折腾得够呛，当天就把共享单车加入了自己日常通勤的固定搭配。",
+      "goal_state": [
+        {
+          "domain": "旅行与出行",
+          "subcategory": "交通出行方式",
+          "subject": "日常通勤",
+          "op": "update",
+          "change": "地铁 → 地铁+共享单车"
+        }
+      ]
+    },
+    {
+      "event_id": "v4-EV003",
+      "time": "2023-04-09",
+      "event": "林晓翻看毕业材料时发现校友登记里把本科毕业纪念日记错了，随手按毕业证日期改成了7月1日。",
+      "goal_state": [
+        {
+          "domain": "纪念日",
+          "subcategory": "个人纪念日",
+          "subject": "本科毕业纪念日",
+          "op": "update",
+          "change": "6月30日 → 7月1日"
+        }
+      ]
+    },
+    {
+      "event_id": "v4-EV004",
+      "time": "2023-04-12",
+      "event": "林晓整理个人重要日期时，把自己入职那天单独记成了每年的9月1日。",
+      "goal_state": [
+        {
+          "domain": "纪念日",
+          "subcategory": "个人纪念日",
+          "subject": "入职纪念日",
+          "op": "create",
+          "change": "9月1日"
+        }
+      ]
+    },
+    {
+      "event_id": "v4-EV005",
+      "time": "2023-04-15",
+      "event": "林晓去车管所参加科目四并通过领证，当天把机动车驾驶证补录为C2驾驶证。",
+      "goal_state": [
+        {
+          "domain": "旅行与出行",
+          "subcategory": "证件与签证",
+          "subject": "机动车驾驶证",
+          "op": "create",
+          "change": "C2驾驶证"
+        }
+      ]
+    },
+    {
+      "event_id": "v4-EV006",
+      "time": "2023-04-18",
+      "event": "林晓带橘猫去宠物医院补打狂犬疫苗，回家后顺手把猫粮换定为皇家室内成猫粮。",
+      "goal_state": [
+        {
+          "domain": "宠物与动物",
+          "subcategory": "宠物健康",
+          "subject": "宠物疫苗状态",
+          "op": "update",
+          "change": "橘猫已完成基础三联疫苗 → 橘猫已完成基础三联疫苗，已接种狂犬疫苗"
+        },
+        {
+          "domain": "宠物与动物",
+          "subcategory": "宠物日常",
+          "subject": "宠物主粮品牌",
+          "op": "create",
+          "change": "橘猫主粮为皇家室内成猫粮"
+        }
+      ]
+    },
+    {
+      "event_id": "v4-EV007",
+      "time": "2023-04-21",
+      "event": "林晓在公司年度健康话题分享后，认真把自己的体检安排固定成每年一次全面体检。",
+      "goal_state": [
+        {
+          "domain": "健康与医疗",
+          "subcategory": "健康管理",
+          "subject": "体检频率",
+          "op": "create",
+          "change": "每年一次全面体检"
+        }
+      ]
+    },
+    {
+      "event_id": "v4-EV008",
+      "time": "2023-04-24",
+      "event": "林晓下班后去诚品书店逛了一圈，挑中《三体》带回家，当晚就开始读。",
+      "goal_state": [
+        {
+          "domain": "兴趣爱好",
+          "subcategory": "阅读书籍",
+          "subject": "正在阅读的书籍",
+          "op": "create",
+          "change": "《三体》"
+        }
+      ]
+    },
+    {
+      "event_id": "v4-EV009",
+      "time": "2023-04-28",
+      "event": "林晓和朋友约去日料店吃晚饭，吃完后把日料明确记成了自己偏好的菜系。",
+      "goal_state": [
+        {
+          "domain": "兴趣爱好",
+          "subcategory": "美食餐饮",
+          "subject": "偏好的菜系",
+          "op": "create",
+          "change": "日料"
+        }
+      ]
+    },
+    {
+      "event_id": "v5-EV001",
+      "time": "2023-05-05",
+      "event": "林晓这阵子总觉得久坐和熬夜把身体状态拉得很紧，专门去做了一次更细的体检，顺手记下体重和血型，并把今后的全面体检频率改成每半年一次。",
+      "goal_state": [
+        {
+          "domain": "健康与医疗",
+          "subcategory": "健康管理",
+          "subject": "体检频率",
+          "op": "update",
+          "change": "每年一次全面体检 → 每半年一次全面体检"
+        },
+        {
+          "domain": "健康与医疗",
+          "subcategory": "身体指标",
+          "subject": "体重",
+          "op": "create",
+          "change": "64kg"
+        },
+        {
+          "domain": "健康与医疗",
+          "subcategory": "生物特征",
+          "subject": "血型",
+          "op": "create",
+          "change": "O型血"
+        }
+      ]
+    },
+    {
+      "event_id": "v5-EV002",
+      "time": "2023-05-09",
+      "event": "体检结果出来后，林晓认真复盘了最近的作息和工作节奏，明确把生活优先级调整为健康与稳定优先于加班收入。",
+      "goal_state": [
+        {
+          "domain": "信仰与价值观",
+          "subcategory": "核心价值观",
+          "subject": "生活优先级",
+          "op": "update",
+          "change": "健康优先于加班收入 → 健康与稳定优先于加班收入"
+        }
+      ]
+    },
+    {
+      "event_id": "v5-EV003",
+      "time": "2023-05-12",
+      "event": "林晓周末去寺庙安静待了半天，给自己和家人祈福，从那之后保留了偶尔去寺庙祈福的习惯。",
+      "goal_state": [
+        {
+          "domain": "信仰与价值观",
+          "subcategory": "宗教信仰",
+          "subject": "宗教活动参与",
+          "op": "create",
+          "change": "偶尔去寺庙祈福"
+        }
+      ]
+    },
+    {
+      "event_id": "v5-EV004",
+      "time": "2023-05-16",
+      "event": "林晓发现骑共享单车接驳时常常赶路太急，索性把通勤路线收拢成全程地铁，不再夹杂单车换乘。",
+      "goal_state": [
+        {
+          "domain": "旅行与出行",
+          "subcategory": "交通出行方式",
+          "subject": "日常通勤",
+          "op": "update",
+          "change": "地铁+共享单车 → 地铁"
+        }
+      ]
+    },
+    {
+      "event_id": "v5-EV005",
+      "time": "2023-05-20",
+      "event": "林晓帮自己整理出差住宿经验时，专门筛了一轮常住选项，最后把住宿偏好定成优先选择连锁商务酒店。",
+      "goal_state": [
+        {
+          "domain": "旅行与出行",
+          "subcategory": "酒店住宿",
+          "subject": "住宿偏好",
+          "op": "create",
+          "change": "优先选择连锁商务酒店"
+        }
+      ]
+    },
+    {
+      "event_id": "v5-EV006",
+      "time": "2023-05-23",
+      "event": "林晓把床头那本《三体》收了起来，重新开读《置身事内》，把近期在读书目切换了过去。",
+      "goal_state": [
+        {
+          "domain": "兴趣爱好",
+          "subcategory": "阅读书籍",
+          "subject": "正在阅读的书籍",
+          "op": "update",
+          "change": "《三体》 → 《置身事内》"
+        }
+      ]
+    },
+    {
+      "event_id": "v5-EV007",
+      "time": "2023-05-27",
+      "event": "林晓把手里的iPhone 14 Pro Max处理掉后，换成了iPhone 15 Pro，并顺手开通了iCloud+来接管新手机的云端存储。",
+      "goal_state": [
+        {
+          "domain": "数字与技术",
+          "subcategory": "设备硬件",
+          "subject": "持有手机",
+          "op": "update",
+          "change": "iPhone 14 Pro Max → iPhone 15 Pro"
+        },
+        {
+          "domain": "数字与技术",
+          "subcategory": "网络服务",
+          "subject": "云存储服务",
+          "op": "create",
+          "change": "iCloud+"
+        }
+      ]
+    },
+    {
+      "event_id": "v6-EV001",
+      "time": "2023-06-05",
+      "event": "林晓参加公司年度评审后拿到晋升结果和调薪通知，岗位从后端开发工程师调整为资深后端开发工程师，税后月薪也随之上调。",
+      "goal_state": [
+        {
+          "domain": "职业与工作",
+          "subcategory": "职业经历",
+          "subject": "当前职位",
+          "op": "update",
+          "change": "互联网公司后端开发工程师 → 互联网公司资深后端开发工程师"
+        },
+        {
+          "domain": "职业与工作",
+          "subcategory": "薪酬待遇",
+          "subject": "税后月薪",
+          "op": "update",
+          "change": "18000元 → 19500元"
+        }
+      ]
+    },
+    {
+      "event_id": "v6-EV002",
+      "time": "2023-06-09",
+      "event": "林晓连续几周加班后明显感觉精力被透支，专门梳理了一次自己的职业取舍，把“健康与稳定”从对抗加班收入，进一步调整为优先于晋升速度。",
+      "goal_state": [
+        {
+          "domain": "信仰与价值观",
+          "subcategory": "核心价值观",
+          "subject": "生活优先级",
+          "op": "update",
+          "change": "健康与稳定优先于加班收入 → 健康与稳定优先于职业晋升速度"
+        }
+      ]
+    },
+    {
+      "event_id": "v6-EV003",
+      "time": "2023-06-12",
+      "event": "林晓发现自己最近看租约纠纷和租金波动的信息越来越多，主动把日常关注的公共议题重心从通勤效率转到了租房保障与居住成本。",
+      "goal_state": [
+        {
+          "domain": "信仰与价值观",
+          "subcategory": "政治倾向",
+          "subject": "公共议题关注",
+          "op": "update",
+          "change": "关注城市公共交通与通勤效率 → 关注租房保障与居住成本"
+        }
+      ]
+    },
+    {
+      "event_id": "v6-EV004",
+      "time": "2023-06-16",
+      "event": "林晓为了让工作日早晨不再慌乱，试着连着执行了一套固定晨间节奏，并把工作日起床时间稳定在7:20。",
+      "goal_state": [
+        {
+          "domain": "生活习惯",
+          "subcategory": "作息规律",
+          "subject": "工作日起床时间",
+          "op": "create",
+          "change": "7:20起床"
+        }
+      ]
+    },
+    {
+      "event_id": "v6-EV005",
+      "time": "2023-06-18",
+      "event": "林晓做了一次性格测评，并把结果记成了INTJ。",
+      "goal_state": [
+        {
+          "domain": "身份与基础信息",
+          "subcategory": "个性特质",
+          "subject": "性格测评结果",
+          "op": "create",
+          "change": "INTJ"
+        }
+      ]
+    },
+    {
+      "event_id": "v6-EV006",
+      "time": "2023-06-21",
+      "event": "林晓去配了一副更适合久看屏幕的黑框眼镜，之后把日常佩戴黑框眼镜固定了下来。",
+      "goal_state": [
+        {
+          "domain": "身份与基础信息",
+          "subcategory": "外貌特征",
+          "subject": "佩戴习惯",
+          "op": "create",
+          "change": "日常戴黑框眼镜"
+        }
+      ]
+    },
+    {
+      "event_id": "v6-EV007",
+      "time": "2023-06-24",
+      "event": "林晓照料金鱼时发现它已经死亡，随后把鱼缸清理收起，不再保留这条金鱼。",
+      "goal_state": [
+        {
+          "domain": "宠物与动物",
+          "subcategory": "宠物基本信息",
+          "subject": "饲养的宠物",
+          "op": "update",
+          "change": "金鱼一条 → 空"
+        }
+      ]
+    },
+    {
+      "event_id": "v6-EV008",
+      "time": "2023-06-26",
+      "event": "林晓对比配料和适口性后，给家里的橘猫改用了渴望室内猫粮。",
+      "goal_state": [
+        {
+          "domain": "宠物与动物",
+          "subcategory": "宠物日常",
+          "subject": "宠物主粮品牌",
+          "op": "update",
+          "change": "橘猫主粮为皇家室内成猫粮 → 橘猫主粮为渴望室内猫粮"
+        }
+      ]
+    },
+    {
+      "event_id": "v6-EV009",
+      "time": "2023-06-28",
+      "event": "林晓为了压住下午的困倦和分心，把工作日的提神方式固定成每天一杯美式咖啡。",
+      "goal_state": [
+        {
+          "domain": "生活习惯",
+          "subcategory": "饮食习惯",
+          "subject": "咖啡习惯",
+          "op": "create",
+          "change": "工作日每天一杯美式咖啡"
+        }
+      ]
+    }
+  ]
+}

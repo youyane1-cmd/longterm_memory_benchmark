@@ -1,0 +1,499 @@
+{
+  "person_id": "P001",
+  "person_summary": "用户法定姓名为林晓，现居地为苏州工业园区。用户父母居住地为青岛。用户本科毕业院校为青岛大学，本科主修专业为计算机科学与技术。用户每月房租为3500元，住房类型为租住两室一厅。用户日常通勤为地铁。用户持有手机为iPhone 14 Pro Max和iPhone 13。",
+  "round_id": "v2",
+  "states": [
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "姓名称谓",
+      "subject": "法定姓名",
+      "mutable": false,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "林晓"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "居住地址",
+      "subject": "现居地",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "苏州工业园区"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "父母信息",
+      "subject": "父母居住地",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "青岛"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "学校与就读",
+      "subject": "本科毕业院校",
+      "mutable": false,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "青岛大学"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "专业与学位",
+      "subject": "本科主修专业",
+      "mutable": false,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "计算机科学与技术"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "订阅与固定支出",
+      "subject": "每月房租",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "3500元"
+          ],
+          "reason": null,
+          "event_id": null
+        },
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "update",
+          "value": [
+            "3700元"
+          ],
+          "reason": "上一阶段value为【3500元】，一个月个月后变更为新value。",
+          "event_id": "v1-EV002"
+        },
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "update",
+          "value": [
+            "3900元"
+          ],
+          "reason": "上一阶段value为【3700元】，一个月个月后变更为新value。",
+          "event_id": "v2-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "旅行与出行",
+      "subcategory": "交通出行方式",
+      "subject": "日常通勤",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "地铁"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "居住与房产",
+      "subcategory": "房屋类型与产权",
+      "subject": "住房类型",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "租住两室一厅"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有手机",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "iPhone 14 Pro Max",
+            "iPhone 13"
+          ],
+          "reason": null,
+          "event_id": null
+        },
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "update",
+          "value": [
+            "iPhone 14 Pro Max"
+          ],
+          "reason": "上一阶段value为【iPhone 14 Pro Max、iPhone 13】，一个月个月后变更为新value。",
+          "event_id": "v1-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "银行账户",
+      "subject": "持有银行卡",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "招商银行储蓄卡"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV001"
+        },
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "update",
+          "value": [
+            "招商银行储蓄卡",
+            "建设银行储蓄卡"
+          ],
+          "reason": "上一阶段value为【招商银行储蓄卡】，一个月个月后变更为新value。",
+          "event_id": "v2-EV004"
+        }
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "消费支出",
+      "subject": "大额设备支出",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "AirPods Pro 2"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "社交平台",
+      "subject": "活跃社交平台",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "小红书"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV008"
+        }
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "通讯偏好",
+      "subject": "主要联系渠道",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "微信文字消息"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV004"
+        }
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有耳机",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "AirPods Pro 2"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "软件应用",
+      "subject": "常用效率工具",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "Notion"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV005"
+        }
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "婚恋状态",
+      "subject": "当前感情状态",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "单身"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV007"
+        }
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "朋友与社交关系",
+      "subject": "同城朋友",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "苏州有一位本科校友朋友"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV006"
+        }
+      ]
+    },
+    {
+      "domain": "宠物与动物",
+      "subcategory": "宠物基本信息",
+      "subject": "饲养的宠物",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "橘猫一只"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV005"
+        }
+      ]
+    },
+    {
+      "domain": "宠物与动物",
+      "subcategory": "宠物健康",
+      "subject": "宠物疫苗状态",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "橘猫已完成基础三联疫苗"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV005"
+        }
+      ]
+    },
+    {
+      "domain": "职业与工作",
+      "subcategory": "职业经历",
+      "subject": "当前职位",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "互联网公司后端开发工程师"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV002"
+        }
+      ]
+    },
+    {
+      "domain": "职业与工作",
+      "subcategory": "薪酬待遇",
+      "subject": "税后月薪",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "18000元"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV002"
+        }
+      ]
+    },
+    {
+      "domain": "纪念日",
+      "subcategory": "个人纪念日",
+      "subject": "本科毕业纪念日",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "6月30日"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV001"
+        }
+      ]
+    },
+    {
+      "domain": "纪念日",
+      "subcategory": "关系纪念日",
+      "subject": "父母结婚纪念日",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "10月12日"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV001"
+        }
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "培训与认证",
+      "subject": "在线课程学习",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "Coursera机器学习课程"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV006"
+        }
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "学校与就读",
+      "subject": "毕业证书状态",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "本科毕业证已领取"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV007"
+        }
+      ]
+    }
+  ]
+}

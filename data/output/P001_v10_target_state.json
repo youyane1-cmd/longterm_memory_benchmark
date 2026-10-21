@@ -1,0 +1,99 @@
+{
+  "plan_id": "TP-P001-v10",
+  "person_id": "P001",
+  "person_summary": "用户法定姓名为林晓，现居地为苏州工业园区。用户父母居住地为青岛。用户本科毕业院校为青岛大学，本科主修专业为计算机科学与技术。用户每月房租为3500元，住房类型为租住两室一厅。用户日常通勤为地铁。用户持有手机为iPhone 14 Pro Max和iPhone 13。",
+  "round_id": "v10",
+  "horizon": "3_months",
+  "changes": [
+    {
+      "change_id": "CH01",
+      "op": "update",
+      "domain": "职业与工作",
+      "subcategory": "薪酬待遇",
+      "subject": "税后月薪",
+      "change": "19500元 → 20500元",
+      "reason": "上一阶段value为【19500元】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH02",
+      "op": "create",
+      "domain": "职业与工作",
+      "subcategory": "职业资质",
+      "subject": "持有的职业认证",
+      "change": "PMP认证",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH03",
+      "op": "update",
+      "domain": "宠物与动物",
+      "subcategory": "宠物基本信息",
+      "subject": "饲养的宠物",
+      "change": "玄凤鹦鹉一只 → 空",
+      "reason": "上一阶段value为【橘猫一只、玄凤鹦鹉一只】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH04",
+      "op": "create",
+      "domain": "宠物与动物",
+      "subcategory": "宠物日常",
+      "subject": "宠物玩具偏好",
+      "change": "橘猫偏好逗猫棒",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH05",
+      "op": "update",
+      "domain": "居住与房产",
+      "subcategory": "房屋类型与产权",
+      "subject": "住房类型",
+      "change": "租住一室一厅 → 租住两室一厅",
+      "reason": "上一阶段value为【租住一室一厅】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH06",
+      "op": "create",
+      "domain": "居住与房产",
+      "subcategory": "家电设备",
+      "subject": "新增厨房电器",
+      "change": "空气炸锅",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH07",
+      "op": "update",
+      "domain": "兴趣爱好",
+      "subcategory": "阅读书籍",
+      "subject": "正在阅读的书籍",
+      "change": "《置身事内》 → 《变量》",
+      "reason": "上一阶段value为【《置身事内》】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH08",
+      "op": "create",
+      "domain": "兴趣爱好",
+      "subcategory": "数字内容消费",
+      "subject": "订阅的播客",
+      "change": "《科技早知道》",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH09",
+      "op": "update",
+      "domain": "社交与通讯",
+      "subcategory": "通讯偏好",
+      "subject": "主要联系渠道",
+      "change": "微信语音消息 → 微信文字消息",
+      "reason": "上一阶段value为【微信语音消息】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH10",
+      "op": "create",
+      "domain": "社交与通讯",
+      "subcategory": "社群与圈子",
+      "subject": "加入的兴趣社群",
+      "change": "苏州地铁通勤交流群",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    }
+  ]
+}

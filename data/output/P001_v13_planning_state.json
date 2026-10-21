@@ -1,0 +1,2046 @@
+{
+  "person_id": "P001",
+  "person_summary": "用户法定姓名为林晓，现居地为苏州工业园区。用户父母居住地为青岛。用户本科毕业院校为青岛大学，本科主修专业为计算机科学与技术。用户每月房租为3500元，住房类型为租住两室一厅。用户日常通勤为地铁。用户持有手机为iPhone 14 Pro Max和iPhone 13。",
+  "round_id": "v13",
+  "states": [
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "姓名称谓",
+      "subject": "法定姓名",
+      "mutable": false,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "林晓"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "居住地址",
+      "subject": "现居地",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "苏州工业园区"
+          ],
+          "reason": null,
+          "event_id": null
+        },
+        {
+          "version": 1,
+          "round_id": "v3",
+          "op": "update",
+          "value": [
+            "苏州高新区"
+          ],
+          "reason": "上一阶段value为【苏州工业园区】，一个月个月后变更为新value。",
+          "event_id": "v3-EV005"
+        }
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "父母信息",
+      "subject": "父母居住地",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "青岛"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "学校与就读",
+      "subject": "本科毕业院校",
+      "mutable": false,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "青岛大学"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "专业与学位",
+      "subject": "本科主修专业",
+      "mutable": false,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "计算机科学与技术"
+          ],
+          "reason": null,
+          "event_id": null
+        }
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "订阅与固定支出",
+      "subject": "每月房租",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "3500元"
+          ],
+          "reason": null,
+          "event_id": null
+        },
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "update",
+          "value": [
+            "3700元"
+          ],
+          "reason": "上一阶段value为【3500元】，一个月个月后变更为新value。",
+          "event_id": "v1-EV002"
+        },
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "update",
+          "value": [
+            "3900元"
+          ],
+          "reason": "上一阶段value为【3700元】，一个月个月后变更为新value。",
+          "event_id": "v2-EV003"
+        },
+        {
+          "version": 3,
+          "round_id": "v8",
+          "op": "update",
+          "value": [
+            "3500元"
+          ],
+          "reason": "上一阶段value为【3900元】，一个月个月后变更为新value。",
+          "event_id": "v8-EV001"
+        }
+      ]
+    },
+    {
+      "domain": "旅行与出行",
+      "subcategory": "交通出行方式",
+      "subject": "日常通勤",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "地铁"
+          ],
+          "reason": null,
+          "event_id": null
+        },
+        {
+          "version": 1,
+          "round_id": "v4",
+          "op": "update",
+          "value": [
+            "地铁+共享单车"
+          ],
+          "reason": "上一阶段value为【地铁】，一个月个月后变更为新value。",
+          "event_id": "v4-EV002"
+        },
+        {
+          "version": 2,
+          "round_id": "v5",
+          "op": "update",
+          "value": [
+            "地铁"
+          ],
+          "reason": "上一阶段value为【地铁+共享单车】，一个月个月后变更为新value。",
+          "event_id": "v5-EV004"
+        },
+        {
+          "version": 3,
+          "round_id": "v9",
+          "op": "update",
+          "value": [
+            "地铁+步行"
+          ],
+          "reason": "上一阶段value为【地铁】，一个月个月后变更为新value。",
+          "event_id": "v9-EV003"
+        },
+        {
+          "version": 4,
+          "round_id": "v12",
+          "op": "update",
+          "value": [
+            "地铁"
+          ],
+          "reason": "上一阶段value为【地铁+步行】，一个月个月后变更为新value。",
+          "event_id": "v12-EV007"
+        }
+      ]
+    },
+    {
+      "domain": "居住与房产",
+      "subcategory": "房屋类型与产权",
+      "subject": "住房类型",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "租住两室一厅"
+          ],
+          "reason": null,
+          "event_id": null
+        },
+        {
+          "version": 1,
+          "round_id": "v8",
+          "op": "update",
+          "value": [
+            "租住一室一厅"
+          ],
+          "reason": "上一阶段value为【租住两室一厅】，一个月个月后变更为新value。",
+          "event_id": "v8-EV001"
+        },
+        {
+          "version": 2,
+          "round_id": "v10",
+          "op": "update",
+          "value": [
+            "租住两室一厅"
+          ],
+          "reason": "上一阶段value为【租住一室一厅】，一个月个月后变更为新value。",
+          "event_id": "v10-EV005"
+        },
+        {
+          "version": 3,
+          "round_id": "v13",
+          "op": "update",
+          "value": [
+            "租住一室一厅"
+          ],
+          "reason": "上一阶段value为【租住两室一厅】，一个月个月后变更为新value。",
+          "event_id": "v13-EV001"
+        }
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有手机",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 0,
+          "round_id": "v0",
+          "op": "initial",
+          "value": [
+            "iPhone 14 Pro Max",
+            "iPhone 13"
+          ],
+          "reason": null,
+          "event_id": null
+        },
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "update",
+          "value": [
+            "iPhone 14 Pro Max"
+          ],
+          "reason": "上一阶段value为【iPhone 14 Pro Max、iPhone 13】，一个月个月后变更为新value。",
+          "event_id": "v1-EV003"
+        },
+        {
+          "version": 2,
+          "round_id": "v5",
+          "op": "update",
+          "value": [
+            "iPhone 15 Pro"
+          ],
+          "reason": "上一阶段value为【iPhone 14 Pro Max】，一个月个月后变更为新value。",
+          "event_id": "v5-EV007"
+        },
+        {
+          "version": 3,
+          "round_id": "v7",
+          "op": "update",
+          "value": [
+            "iPhone 15 Pro",
+            "iPhone 13"
+          ],
+          "reason": "上一阶段value为【iPhone 15 Pro】，一个月个月后变更为新value。",
+          "event_id": "v7-EV007"
+        },
+        {
+          "version": 4,
+          "round_id": "v12",
+          "op": "update",
+          "value": [
+            "iPhone 15 Pro"
+          ],
+          "reason": "上一阶段value为【iPhone 15 Pro、iPhone 13】，一个月个月后变更为新value。",
+          "event_id": "v12-EV002"
+        }
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "银行账户",
+      "subject": "持有银行卡",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "招商银行储蓄卡"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV001"
+        },
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "update",
+          "value": [
+            "招商银行储蓄卡",
+            "建设银行储蓄卡"
+          ],
+          "reason": "上一阶段value为【招商银行储蓄卡】，一个月个月后变更为新value。",
+          "event_id": "v2-EV004"
+        },
+        {
+          "version": 3,
+          "round_id": "v3",
+          "op": "update",
+          "value": [
+            "招商银行储蓄卡",
+            "建设银行储蓄卡",
+            "中国银行储蓄卡"
+          ],
+          "reason": "上一阶段value为【招商银行储蓄卡、建设银行储蓄卡】，一个月个月后变更为新value。",
+          "event_id": "v3-EV009"
+        },
+        {
+          "version": 4,
+          "round_id": "v8",
+          "op": "update",
+          "value": [
+            "招商银行储蓄卡",
+            "建设银行储蓄卡"
+          ],
+          "reason": "上一阶段value为【招商银行储蓄卡、建设银行储蓄卡、中国银行储蓄卡】，一个月个月后变更为新value。",
+          "event_id": "v8-EV002"
+        },
+        {
+          "version": 5,
+          "round_id": "v9",
+          "op": "update",
+          "value": [
+            "招商银行储蓄卡",
+            "建设银行储蓄卡",
+            "工商银行储蓄卡"
+          ],
+          "reason": "上一阶段value为【招商银行储蓄卡、建设银行储蓄卡】，一个月个月后变更为新value。",
+          "event_id": "v9-EV006"
+        }
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "消费支出",
+      "subject": "大额设备支出",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "AirPods Pro 2"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "社交平台",
+      "subject": "活跃社交平台",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "小红书"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV008"
+        },
+        {
+          "version": 2,
+          "round_id": "v9",
+          "op": "update",
+          "value": [
+            "小红书",
+            "微信视频号"
+          ],
+          "reason": "上一阶段value为【小红书】，一个月个月后变更为新value。",
+          "event_id": "v9-EV004"
+        },
+        {
+          "version": 3,
+          "round_id": "v11",
+          "op": "update",
+          "value": [
+            "小红书"
+          ],
+          "reason": "上一阶段value为【小红书、微信视频号】，一个月个月后变更为新value。",
+          "event_id": "v11-EV005"
+        }
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "通讯偏好",
+      "subject": "主要联系渠道",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "微信文字消息"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV004"
+        },
+        {
+          "version": 2,
+          "round_id": "v9",
+          "op": "update",
+          "value": [
+            "微信语音消息"
+          ],
+          "reason": "上一阶段value为【微信文字消息】，一个月个月后变更为新value。",
+          "event_id": "v9-EV005"
+        },
+        {
+          "version": 3,
+          "round_id": "v10",
+          "op": "update",
+          "value": [
+            "微信文字消息"
+          ],
+          "reason": "上一阶段value为【微信语音消息】，一个月个月后变更为新value。",
+          "event_id": "v10-EV001"
+        },
+        {
+          "version": 4,
+          "round_id": "v13",
+          "op": "update",
+          "value": [
+            "微信语音通话"
+          ],
+          "reason": "上一阶段value为【微信文字消息】，一个月个月后变更为新value。",
+          "event_id": "v13-EV005"
+        }
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有耳机",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "AirPods Pro 2"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "软件应用",
+      "subject": "常用效率工具",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "Notion"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV005"
+        },
+        {
+          "version": 2,
+          "round_id": "v12",
+          "op": "update",
+          "value": [
+            "Notion",
+            "飞书"
+          ],
+          "reason": "上一阶段value为【Notion】，一个月个月后变更为新value。",
+          "event_id": "v12-EV004"
+        }
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "婚恋状态",
+      "subject": "当前感情状态",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "单身"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV007"
+        }
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "朋友与社交关系",
+      "subject": "同城朋友",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 1,
+          "round_id": "v1",
+          "op": "create",
+          "value": [
+            "苏州有一位本科校友朋友"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v1-EV006"
+        },
+        {
+          "version": 2,
+          "round_id": "v3",
+          "op": "update",
+          "value": [
+            "苏州有一位本科校友朋友",
+            "苏州有一位公司同事朋友"
+          ],
+          "reason": "上一阶段value为【苏州有一位本科校友朋友】，一个月个月后变更为新value。",
+          "event_id": "v3-EV007"
+        }
+      ]
+    },
+    {
+      "domain": "宠物与动物",
+      "subcategory": "宠物基本信息",
+      "subject": "饲养的宠物",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "橘猫一只"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV005"
+        },
+        {
+          "version": 3,
+          "round_id": "v4",
+          "op": "update",
+          "value": [
+            "橘猫一只",
+            "金鱼一条"
+          ],
+          "reason": "上一阶段value为【橘猫一只】，一个月个月后变更为新value。",
+          "event_id": "v4-EV001"
+        },
+        {
+          "version": 4,
+          "round_id": "v6",
+          "op": "update",
+          "value": [
+            "橘猫一只"
+          ],
+          "reason": "上一阶段value为【橘猫一只、金鱼一条】，一个月个月后变更为新value。",
+          "event_id": "v6-EV007"
+        },
+        {
+          "version": 5,
+          "round_id": "v7",
+          "op": "update",
+          "value": [
+            "橘猫一只",
+            "玄凤鹦鹉一只"
+          ],
+          "reason": "上一阶段value为【橘猫一只】，一个月个月后变更为新value。",
+          "event_id": "v7-EV008"
+        },
+        {
+          "version": 6,
+          "round_id": "v10",
+          "op": "update",
+          "value": [
+            "橘猫一只"
+          ],
+          "reason": "上一阶段value为【橘猫一只、玄凤鹦鹉一只】，一个月个月后变更为新value。",
+          "event_id": "v10-EV002"
+        }
+      ]
+    },
+    {
+      "domain": "宠物与动物",
+      "subcategory": "宠物健康",
+      "subject": "宠物疫苗状态",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "橘猫已完成基础三联疫苗"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV005"
+        },
+        {
+          "version": 3,
+          "round_id": "v4",
+          "op": "update",
+          "value": [
+            "橘猫已完成基础三联疫苗，已接种狂犬疫苗"
+          ],
+          "reason": "上一阶段value为【橘猫已完成基础三联疫苗】，一个月个月后变更为新value。",
+          "event_id": "v4-EV006"
+        }
+      ]
+    },
+    {
+      "domain": "职业与工作",
+      "subcategory": "职业经历",
+      "subject": "当前职位",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "互联网公司后端开发工程师"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV002"
+        },
+        {
+          "version": 3,
+          "round_id": "v6",
+          "op": "update",
+          "value": [
+            "互联网公司资深后端开发工程师"
+          ],
+          "reason": "上一阶段value为【互联网公司后端开发工程师】，一个月个月后变更为新value。",
+          "event_id": "v6-EV001"
+        }
+      ]
+    },
+    {
+      "domain": "职业与工作",
+      "subcategory": "薪酬待遇",
+      "subject": "税后月薪",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "18000元"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV002"
+        },
+        {
+          "version": 3,
+          "round_id": "v6",
+          "op": "update",
+          "value": [
+            "19500元"
+          ],
+          "reason": "上一阶段value为【18000元】，一个月个月后变更为新value。",
+          "event_id": "v6-EV001"
+        },
+        {
+          "version": 4,
+          "round_id": "v10",
+          "op": "update",
+          "value": [
+            "20500元"
+          ],
+          "reason": "上一阶段value为【19500元】，一个月个月后变更为新value。",
+          "event_id": "v10-EV006"
+        },
+        {
+          "version": 5,
+          "round_id": "v12",
+          "op": "update",
+          "value": [
+            "21500元"
+          ],
+          "reason": "上一阶段value为【20500元】，一个月个月后变更为新value。",
+          "event_id": "v12-EV006"
+        }
+      ]
+    },
+    {
+      "domain": "纪念日",
+      "subcategory": "个人纪念日",
+      "subject": "本科毕业纪念日",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "6月30日"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV001"
+        },
+        {
+          "version": 3,
+          "round_id": "v4",
+          "op": "update",
+          "value": [
+            "7月1日"
+          ],
+          "reason": "上一阶段value为【6月30日】，一个月个月后变更为新value。",
+          "event_id": "v4-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "纪念日",
+      "subcategory": "关系纪念日",
+      "subject": "父母结婚纪念日",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "10月12日"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV001"
+        }
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "培训与认证",
+      "subject": "在线课程学习",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "Coursera机器学习课程"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV006"
+        },
+        {
+          "version": 3,
+          "round_id": "v3",
+          "op": "update",
+          "value": [
+            "Coursera机器学习课程",
+            "CS50 Python课程"
+          ],
+          "reason": "上一阶段value为【Coursera机器学习课程】，一个月个月后变更为新value。",
+          "event_id": "v3-EV003"
+        },
+        {
+          "version": 4,
+          "round_id": "v7",
+          "op": "update",
+          "value": [
+            "Coursera机器学习课程",
+            "CS50 Python课程",
+            "吴恩达深度学习专项课"
+          ],
+          "reason": "上一阶段value为【Coursera机器学习课程、CS50 Python课程】，一个月个月后变更为新value。",
+          "event_id": "v7-EV005"
+        },
+        {
+          "version": 5,
+          "round_id": "v8",
+          "op": "update",
+          "value": [
+            "Coursera机器学习课程",
+            "CS50 Python课程"
+          ],
+          "reason": "上一阶段value为【Coursera机器学习课程、CS50 Python课程、吴恩达深度学习专项课】，一个月个月后变更为新value。",
+          "event_id": "v8-EV008"
+        }
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "学校与就读",
+      "subject": "毕业证书状态",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 2,
+          "round_id": "v2",
+          "op": "create",
+          "value": [
+            "本科毕业证已领取"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v2-EV007"
+        }
+      ]
+    },
+    {
+      "domain": "信仰与价值观",
+      "subcategory": "核心价值观",
+      "subject": "生活优先级",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 3,
+          "round_id": "v3",
+          "op": "create",
+          "value": [
+            "健康优先于加班收入"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v3-EV001"
+        },
+        {
+          "version": 4,
+          "round_id": "v5",
+          "op": "update",
+          "value": [
+            "健康与稳定优先于加班收入"
+          ],
+          "reason": "上一阶段value为【健康优先于加班收入】，一个月个月后变更为新value。",
+          "event_id": "v5-EV002"
+        },
+        {
+          "version": 5,
+          "round_id": "v6",
+          "op": "update",
+          "value": [
+            "健康与稳定优先于职业晋升速度"
+          ],
+          "reason": "上一阶段value为【健康与稳定优先于加班收入】，一个月个月后变更为新value。",
+          "event_id": "v6-EV002"
+        }
+      ]
+    },
+    {
+      "domain": "信仰与价值观",
+      "subcategory": "政治倾向",
+      "subject": "公共议题关注",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 3,
+          "round_id": "v3",
+          "op": "create",
+          "value": [
+            "关注城市公共交通与通勤效率"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v3-EV002"
+        },
+        {
+          "version": 4,
+          "round_id": "v6",
+          "op": "update",
+          "value": [
+            "关注租房保障与居住成本"
+          ],
+          "reason": "上一阶段value为【关注城市公共交通与通勤效率】，一个月个月后变更为新value。",
+          "event_id": "v6-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "培训与认证",
+      "subject": "认证考试结果",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 3,
+          "round_id": "v3",
+          "op": "create",
+          "value": [
+            "大学英语六级已通过"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v3-EV004"
+        }
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "联系方式",
+      "subject": "常用邮箱",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 3,
+          "round_id": "v3",
+          "op": "create",
+          "value": [
+            "linxiao.work@outlook.com"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v3-EV006"
+        },
+        {
+          "version": 4,
+          "round_id": "v7",
+          "op": "update",
+          "value": [
+            "linxiao.note@outlook.com"
+          ],
+          "reason": "上一阶段value为【linxiao.work@outlook.com】，一个月个月后变更为新value。",
+          "event_id": "v7-EV001"
+        }
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "关系状态与质量",
+      "subject": "与父母联系频率",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 3,
+          "round_id": "v3",
+          "op": "create",
+          "value": [
+            "每周视频通话一次"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v3-EV008"
+        },
+        {
+          "version": 4,
+          "round_id": "v11",
+          "op": "update",
+          "value": [
+            "每周视频通话两次"
+          ],
+          "reason": "上一阶段value为【每周视频通话一次】，一个月个月后变更为新value。",
+          "event_id": "v11-EV006"
+        }
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "财务规划",
+      "subject": "月度储蓄目标",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 3,
+          "round_id": "v3",
+          "op": "create",
+          "value": [
+            "每月固定储蓄3000元"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v3-EV010"
+        }
+      ]
+    },
+    {
+      "domain": "宠物与动物",
+      "subcategory": "宠物日常",
+      "subject": "宠物主粮品牌",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 4,
+          "round_id": "v4",
+          "op": "create",
+          "value": [
+            "橘猫主粮为皇家室内成猫粮"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v4-EV006"
+        },
+        {
+          "version": 5,
+          "round_id": "v6",
+          "op": "update",
+          "value": [
+            "橘猫主粮为渴望室内猫粮"
+          ],
+          "reason": "上一阶段value为【橘猫主粮为皇家室内成猫粮】，一个月个月后变更为新value。",
+          "event_id": "v6-EV008"
+        }
+      ]
+    },
+    {
+      "domain": "兴趣爱好",
+      "subcategory": "阅读书籍",
+      "subject": "正在阅读的书籍",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 4,
+          "round_id": "v4",
+          "op": "create",
+          "value": [
+            "《三体》"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v4-EV008"
+        },
+        {
+          "version": 5,
+          "round_id": "v5",
+          "op": "update",
+          "value": [
+            "《置身事内》"
+          ],
+          "reason": "上一阶段value为【《三体》】，一个月个月后变更为新value。",
+          "event_id": "v5-EV006"
+        },
+        {
+          "version": 6,
+          "round_id": "v10",
+          "op": "update",
+          "value": [
+            "《变量》"
+          ],
+          "reason": "上一阶段value为【《置身事内》】，一个月个月后变更为新value。",
+          "event_id": "v10-EV003"
+        },
+        {
+          "version": 7,
+          "round_id": "v11",
+          "op": "update",
+          "value": [
+            "《芯片战争》"
+          ],
+          "reason": "上一阶段value为【《变量》】，一个月个月后变更为新value。",
+          "event_id": "v11-EV005"
+        }
+      ]
+    },
+    {
+      "domain": "兴趣爱好",
+      "subcategory": "美食餐饮",
+      "subject": "偏好的菜系",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 4,
+          "round_id": "v4",
+          "op": "create",
+          "value": [
+            "日料"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v4-EV009"
+        }
+      ]
+    },
+    {
+      "domain": "旅行与出行",
+      "subcategory": "证件与签证",
+      "subject": "机动车驾驶证",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 4,
+          "round_id": "v4",
+          "op": "create",
+          "value": [
+            "C2驾驶证"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v4-EV005"
+        }
+      ]
+    },
+    {
+      "domain": "健康与医疗",
+      "subcategory": "健康管理",
+      "subject": "体检频率",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 4,
+          "round_id": "v4",
+          "op": "create",
+          "value": [
+            "每年一次全面体检"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v4-EV007"
+        },
+        {
+          "version": 5,
+          "round_id": "v5",
+          "op": "update",
+          "value": [
+            "每半年一次全面体检"
+          ],
+          "reason": "上一阶段value为【每年一次全面体检】，一个月个月后变更为新value。",
+          "event_id": "v5-EV001"
+        }
+      ]
+    },
+    {
+      "domain": "纪念日",
+      "subcategory": "个人纪念日",
+      "subject": "入职纪念日",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 4,
+          "round_id": "v4",
+          "op": "create",
+          "value": [
+            "9月1日"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v4-EV004"
+        },
+        {
+          "version": 5,
+          "round_id": "v7",
+          "op": "update",
+          "value": [
+            "9月3日"
+          ],
+          "reason": "上一阶段value为【9月1日】，一个月个月后变更为新value。",
+          "event_id": "v7-EV004"
+        }
+      ]
+    },
+    {
+      "domain": "健康与医疗",
+      "subcategory": "身体指标",
+      "subject": "体重",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 5,
+          "round_id": "v5",
+          "op": "create",
+          "value": [
+            "64kg"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v5-EV001"
+        },
+        {
+          "version": 6,
+          "round_id": "v11",
+          "op": "update",
+          "value": [
+            "63kg"
+          ],
+          "reason": "上一阶段value为【64kg】，一个月个月后变更为新value。",
+          "event_id": "v11-EV004"
+        },
+        {
+          "version": 7,
+          "round_id": "v13",
+          "op": "update",
+          "value": [
+            "62kg"
+          ],
+          "reason": "上一阶段value为【63kg】，一个月个月后变更为新value。",
+          "event_id": "v13-EV007"
+        }
+      ]
+    },
+    {
+      "domain": "健康与医疗",
+      "subcategory": "生物特征",
+      "subject": "血型",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 5,
+          "round_id": "v5",
+          "op": "create",
+          "value": [
+            "O型血"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v5-EV001"
+        }
+      ]
+    },
+    {
+      "domain": "信仰与价值观",
+      "subcategory": "宗教信仰",
+      "subject": "宗教活动参与",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 5,
+          "round_id": "v5",
+          "op": "create",
+          "value": [
+            "偶尔去寺庙祈福"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v5-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "旅行与出行",
+      "subcategory": "酒店住宿",
+      "subject": "住宿偏好",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 5,
+          "round_id": "v5",
+          "op": "create",
+          "value": [
+            "优先选择连锁商务酒店"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v5-EV005"
+        },
+        {
+          "version": 6,
+          "round_id": "v9",
+          "op": "update",
+          "value": [
+            "优先选择地铁站附近的连锁商务酒店"
+          ],
+          "reason": "上一阶段value为【优先选择连锁商务酒店】，一个月个月后变更为新value。",
+          "event_id": "v9-EV008"
+        }
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "网络服务",
+      "subject": "云存储服务",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 5,
+          "round_id": "v5",
+          "op": "create",
+          "value": [
+            "iCloud+"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v5-EV007"
+        }
+      ]
+    },
+    {
+      "domain": "生活习惯",
+      "subcategory": "作息规律",
+      "subject": "工作日起床时间",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 6,
+          "round_id": "v6",
+          "op": "create",
+          "value": [
+            "7:20起床"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v6-EV004"
+        },
+        {
+          "version": 7,
+          "round_id": "v8",
+          "op": "update",
+          "value": [
+            "7:00起床"
+          ],
+          "reason": "上一阶段value为【7:20起床】，一个月个月后变更为新value。",
+          "event_id": "v8-EV006"
+        }
+      ]
+    },
+    {
+      "domain": "生活习惯",
+      "subcategory": "饮食习惯",
+      "subject": "咖啡习惯",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 6,
+          "round_id": "v6",
+          "op": "create",
+          "value": [
+            "工作日每天一杯美式咖啡"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v6-EV009"
+        }
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "个性特质",
+      "subject": "性格测评结果",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 6,
+          "round_id": "v6",
+          "op": "create",
+          "value": [
+            "INTJ"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v6-EV005"
+        }
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "外貌特征",
+      "subject": "佩戴习惯",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 6,
+          "round_id": "v6",
+          "op": "create",
+          "value": [
+            "日常戴黑框眼镜"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v6-EV006"
+        }
+      ]
+    },
+    {
+      "domain": "宠物与动物",
+      "subcategory": "宠物健康",
+      "subject": "宠物驱虫状态",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 7,
+          "round_id": "v7",
+          "op": "create",
+          "value": [
+            "橘猫已完成本月体内外驱虫"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v7-EV006"
+        }
+      ]
+    },
+    {
+      "domain": "纪念日",
+      "subcategory": "个人纪念日",
+      "subject": "首次独居纪念日",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 7,
+          "round_id": "v7",
+          "op": "create",
+          "value": [
+            "8月18日"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v7-EV009"
+        }
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "学业表现",
+      "subject": "本科绩点",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 7,
+          "round_id": "v7",
+          "op": "create",
+          "value": [
+            "3.4/4.0"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v7-EV002"
+        }
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有智能手表",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 7,
+          "round_id": "v7",
+          "op": "create",
+          "value": [
+            "Apple Watch Series 9"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v7-EV007"
+        }
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "国籍归属",
+      "subject": "籍贯",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 7,
+          "round_id": "v7",
+          "op": "create",
+          "value": [
+            "山东青岛"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v7-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "居住与房产",
+      "subcategory": "装修与家居",
+      "subject": "书桌配置",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 8,
+          "round_id": "v8",
+          "op": "create",
+          "value": [
+            "升降书桌"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v8-EV004"
+        },
+        {
+          "version": 9,
+          "round_id": "v13",
+          "op": "update",
+          "value": [
+            "L形升降书桌"
+          ],
+          "reason": "上一阶段value为【升降书桌】，一个月个月后变更为新value。",
+          "event_id": "v13-EV001"
+        }
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "保险保障",
+      "subject": "医疗保险",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 8,
+          "round_id": "v8",
+          "op": "create",
+          "value": [
+            "百万医疗险"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v8-EV005"
+        }
+      ]
+    },
+    {
+      "domain": "生活习惯",
+      "subcategory": "运动习惯",
+      "subject": "固定运动",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 8,
+          "round_id": "v8",
+          "op": "create",
+          "value": [
+            "每周游泳一次"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v8-EV007"
+        },
+        {
+          "version": 9,
+          "round_id": "v9",
+          "op": "update",
+          "value": [
+            "每周游泳两次"
+          ],
+          "reason": "上一阶段value为【每周游泳一次】，一个月个月后变更为新value。",
+          "event_id": "v9-EV009"
+        }
+      ]
+    },
+    {
+      "domain": "教育经历",
+      "subcategory": "培训与认证",
+      "subject": "职业证书",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 8,
+          "round_id": "v8",
+          "op": "create",
+          "value": [
+            "Python三级证书"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v8-EV009"
+        }
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "联系方式",
+      "subject": "备用邮箱",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 8,
+          "round_id": "v8",
+          "op": "create",
+          "value": [
+            "linxiao.backup@gmail.com"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v8-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "社群与圈子",
+      "subject": "加入的校友社群",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 9,
+          "round_id": "v9",
+          "op": "create",
+          "value": [
+            "青岛大学苏州校友群"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v9-EV001"
+        }
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "社交平台",
+      "subject": "内容发布主题",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 9,
+          "round_id": "v9",
+          "op": "create",
+          "value": [
+            "通勤与城市生活记录"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v9-EV004"
+        }
+      ]
+    },
+    {
+      "domain": "财务与资产",
+      "subcategory": "投资理财",
+      "subject": "持有基金",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 9,
+          "round_id": "v9",
+          "op": "create",
+          "value": [
+            "沪深300指数基金"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v9-EV007"
+        },
+        {
+          "version": 10,
+          "round_id": "v12",
+          "op": "update",
+          "value": [
+            "中证红利指数基金"
+          ],
+          "reason": "上一阶段value为【沪深300指数基金】，一个月个月后变更为新value。",
+          "event_id": "v12-EV005"
+        }
+      ]
+    },
+    {
+      "domain": "法律与记录",
+      "subcategory": "法律文件",
+      "subject": "现行租房合同",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 9,
+          "round_id": "v9",
+          "op": "create",
+          "value": [
+            "苏州工业园区两室一厅续租合同"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v9-EV002"
+        },
+        {
+          "version": 10,
+          "round_id": "v11",
+          "op": "update",
+          "value": [
+            "苏州工业园区两室一厅转为月付续租合同"
+          ],
+          "reason": "上一阶段value为【苏州工业园区两室一厅续租合同】，一个月个月后变更为新value。",
+          "event_id": "v11-EV001"
+        }
+      ]
+    },
+    {
+      "domain": "职业与工作",
+      "subcategory": "职业资质",
+      "subject": "持有的职业认证",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 10,
+          "round_id": "v10",
+          "op": "create",
+          "value": [
+            "PMP认证"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v10-EV004"
+        }
+      ]
+    },
+    {
+      "domain": "宠物与动物",
+      "subcategory": "宠物日常",
+      "subject": "宠物玩具偏好",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 10,
+          "round_id": "v10",
+          "op": "create",
+          "value": [
+            "橘猫偏好逗猫棒"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v10-EV007"
+        },
+        {
+          "version": 11,
+          "round_id": "v13",
+          "op": "update",
+          "value": [
+            "橘猫偏好羽毛球玩具"
+          ],
+          "reason": "上一阶段value为【橘猫偏好逗猫棒】，一个月个月后变更为新value。",
+          "event_id": "v13-EV004"
+        }
+      ]
+    },
+    {
+      "domain": "居住与房产",
+      "subcategory": "家电设备",
+      "subject": "新增厨房电器",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 10,
+          "round_id": "v10",
+          "op": "create",
+          "value": [
+            "空气炸锅"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v10-EV005"
+        },
+        {
+          "version": 11,
+          "round_id": "v13",
+          "op": "update",
+          "value": [
+            "微波炉"
+          ],
+          "reason": "上一阶段value为【空气炸锅】，一个月个月后变更为新value。",
+          "event_id": "v13-EV002"
+        }
+      ]
+    },
+    {
+      "domain": "兴趣爱好",
+      "subcategory": "数字内容消费",
+      "subject": "订阅的播客",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 10,
+          "round_id": "v10",
+          "op": "create",
+          "value": [
+            "《科技早知道》"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v10-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "社群与圈子",
+      "subject": "加入的兴趣社群",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 10,
+          "round_id": "v10",
+          "op": "create",
+          "value": [
+            "苏州地铁通勤交流群"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v10-EV001"
+        }
+      ]
+    },
+    {
+      "domain": "法律与记录",
+      "subcategory": "法律文件",
+      "subject": "电子签名授权书",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 11,
+          "round_id": "v11",
+          "op": "create",
+          "value": [
+            "租房合同电子签名授权书"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v11-EV001"
+        }
+      ]
+    },
+    {
+      "domain": "健康与医疗",
+      "subcategory": "过敏信息",
+      "subject": "药物过敏",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 11,
+          "round_id": "v11",
+          "op": "create",
+          "value": [
+            "青霉素"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v11-EV002"
+        }
+      ]
+    },
+    {
+      "domain": "兴趣爱好",
+      "subcategory": "户外活动",
+      "subject": "固定户外项目",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 11,
+          "round_id": "v11",
+          "op": "create",
+          "value": [
+            "周末骑行"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v11-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "社群与圈子",
+      "subject": "加入的运动社群",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 11,
+          "round_id": "v11",
+          "op": "create",
+          "value": [
+            "苏州周末骑行群"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v11-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "家庭与社会关系",
+      "subcategory": "家庭事件",
+      "subject": "近期家庭聚会",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 11,
+          "round_id": "v11",
+          "op": "create",
+          "value": [
+            "父母来苏州短住一次"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v11-EV007"
+        }
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有平板",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 12,
+          "round_id": "v12",
+          "op": "create",
+          "value": [
+            "iPad Air"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v12-EV008"
+        }
+      ]
+    },
+    {
+      "domain": "数字与技术",
+      "subcategory": "账号信息",
+      "subject": "密码管理工具",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 12,
+          "round_id": "v12",
+          "op": "create",
+          "value": [
+            "1Password"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v12-EV004"
+        }
+      ]
+    },
+    {
+      "domain": "旅行与出行",
+      "subcategory": "旅行经历",
+      "subject": "近期旅行记录",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 12,
+          "round_id": "v12",
+          "op": "create",
+          "value": [
+            "周末去了杭州"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v12-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "职业与工作",
+      "subcategory": "职业状态与规划",
+      "subject": "职业发展方向",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 12,
+          "round_id": "v12",
+          "op": "create",
+          "value": [
+            "继续深耕后端架构方向"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v12-EV006"
+        }
+      ]
+    },
+    {
+      "domain": "信仰与价值观",
+      "subcategory": "核心价值观",
+      "subject": "消费原则",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 12,
+          "round_id": "v12",
+          "op": "create",
+          "value": [
+            "优先购买耐用且长期使用的物品"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v12-EV001"
+        }
+      ]
+    },
+    {
+      "domain": "居住与房产",
+      "subcategory": "物业与社区",
+      "subject": "社区健身设施",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 13,
+          "round_id": "v13",
+          "op": "create",
+          "value": [
+            "小区健身房"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v13-EV003"
+        }
+      ]
+    },
+    {
+      "domain": "宠物与动物",
+      "subcategory": "宠物日常",
+      "subject": "宠物饮水设备",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 13,
+          "round_id": "v13",
+          "op": "create",
+          "value": [
+            "橘猫使用循环饮水机"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v13-EV004"
+        }
+      ]
+    },
+    {
+      "domain": "社交与通讯",
+      "subcategory": "社交平台",
+      "subject": "社交账号昵称",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 13,
+          "round_id": "v13",
+          "op": "create",
+          "value": [
+            "林晓在苏州"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v13-EV006"
+        }
+      ]
+    },
+    {
+      "domain": "身份与基础信息",
+      "subcategory": "外貌特征",
+      "subject": "发型",
+      "mutable": true,
+      "versions": [
+        {
+          "version": 13,
+          "round_id": "v13",
+          "op": "create",
+          "value": [
+            "中短发"
+          ],
+          "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。",
+          "event_id": "v13-EV008"
+        }
+      ]
+    }
+  ]
+}

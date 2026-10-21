@@ -1,0 +1,99 @@
+{
+  "plan_id": "TP-P001-v5",
+  "person_id": "P001",
+  "person_summary": "用户法定姓名为林晓，现居地为苏州工业园区。用户父母居住地为青岛。用户本科毕业院校为青岛大学，本科主修专业为计算机科学与技术。用户每月房租为3500元，住房类型为租住两室一厅。用户日常通勤为地铁。用户持有手机为iPhone 14 Pro Max和iPhone 13。",
+  "round_id": "v5",
+  "horizon": "3_months",
+  "changes": [
+    {
+      "change_id": "CH01",
+      "op": "update",
+      "domain": "健康与医疗",
+      "subcategory": "健康管理",
+      "subject": "体检频率",
+      "change": "每年一次全面体检 → 每半年一次全面体检",
+      "reason": "上一阶段value为【每年一次全面体检】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH02",
+      "op": "create",
+      "domain": "健康与医疗",
+      "subcategory": "身体指标",
+      "subject": "体重",
+      "change": "64kg",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH03",
+      "op": "create",
+      "domain": "健康与医疗",
+      "subcategory": "生物特征",
+      "subject": "血型",
+      "change": "O型血",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH04",
+      "op": "update",
+      "domain": "信仰与价值观",
+      "subcategory": "核心价值观",
+      "subject": "生活优先级",
+      "change": "健康优先于加班收入 → 健康与稳定优先于加班收入",
+      "reason": "上一阶段value为【健康优先于加班收入】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH05",
+      "op": "create",
+      "domain": "信仰与价值观",
+      "subcategory": "宗教信仰",
+      "subject": "宗教活动参与",
+      "change": "偶尔去寺庙祈福",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH06",
+      "op": "update",
+      "domain": "旅行与出行",
+      "subcategory": "交通出行方式",
+      "subject": "日常通勤",
+      "change": "地铁+共享单车 → 地铁",
+      "reason": "上一阶段value为【地铁+共享单车】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH07",
+      "op": "create",
+      "domain": "旅行与出行",
+      "subcategory": "酒店住宿",
+      "subject": "住宿偏好",
+      "change": "优先选择连锁商务酒店",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH08",
+      "op": "update",
+      "domain": "兴趣爱好",
+      "subcategory": "阅读书籍",
+      "subject": "正在阅读的书籍",
+      "change": "《三体》 → 《置身事内》",
+      "reason": "上一阶段value为【《三体》】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH09",
+      "op": "update",
+      "domain": "数字与技术",
+      "subcategory": "设备硬件",
+      "subject": "持有手机",
+      "change": "iPhone 14 Pro Max → iPhone 15 Pro",
+      "reason": "上一阶段value为【iPhone 14 Pro Max】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH10",
+      "op": "create",
+      "domain": "数字与技术",
+      "subcategory": "网络服务",
+      "subject": "云存储服务",
+      "change": "iCloud+",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    }
+  ]
+}

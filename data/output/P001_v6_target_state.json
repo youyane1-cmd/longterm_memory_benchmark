@@ -1,0 +1,99 @@
+{
+  "plan_id": "TP-P001-v6",
+  "person_id": "P001",
+  "person_summary": "用户法定姓名为林晓，现居地为苏州工业园区。用户父母居住地为青岛。用户本科毕业院校为青岛大学，本科主修专业为计算机科学与技术。用户每月房租为3500元，住房类型为租住两室一厅。用户日常通勤为地铁。用户持有手机为iPhone 14 Pro Max和iPhone 13。",
+  "round_id": "v6",
+  "horizon": "3_months",
+  "changes": [
+    {
+      "change_id": "CH01",
+      "op": "update",
+      "domain": "信仰与价值观",
+      "subcategory": "核心价值观",
+      "subject": "生活优先级",
+      "change": "健康与稳定优先于加班收入 → 健康与稳定优先于职业晋升速度",
+      "reason": "上一阶段value为【健康与稳定优先于加班收入】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH02",
+      "op": "update",
+      "domain": "信仰与价值观",
+      "subcategory": "政治倾向",
+      "subject": "公共议题关注",
+      "change": "关注城市公共交通与通勤效率 → 关注租房保障与居住成本",
+      "reason": "上一阶段value为【关注城市公共交通与通勤效率】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH03",
+      "op": "update",
+      "domain": "职业与工作",
+      "subcategory": "职业经历",
+      "subject": "当前职位",
+      "change": "互联网公司后端开发工程师 → 互联网公司资深后端开发工程师",
+      "reason": "上一阶段value为【互联网公司后端开发工程师】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH04",
+      "op": "update",
+      "domain": "职业与工作",
+      "subcategory": "薪酬待遇",
+      "subject": "税后月薪",
+      "change": "18000元 → 19500元",
+      "reason": "上一阶段value为【18000元】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH05",
+      "op": "create",
+      "domain": "生活习惯",
+      "subcategory": "作息规律",
+      "subject": "工作日起床时间",
+      "change": "7:20起床",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH06",
+      "op": "create",
+      "domain": "生活习惯",
+      "subcategory": "饮食习惯",
+      "subject": "咖啡习惯",
+      "change": "工作日每天一杯美式咖啡",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH07",
+      "op": "update",
+      "domain": "宠物与动物",
+      "subcategory": "宠物基本信息",
+      "subject": "饲养的宠物",
+      "change": "金鱼一条 → 空",
+      "reason": "上一阶段value为【橘猫一只、金鱼一条】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH08",
+      "op": "update",
+      "domain": "宠物与动物",
+      "subcategory": "宠物日常",
+      "subject": "宠物主粮品牌",
+      "change": "橘猫主粮为皇家室内成猫粮 → 橘猫主粮为渴望室内猫粮",
+      "reason": "上一阶段value为【橘猫主粮为皇家室内成猫粮】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH09",
+      "op": "create",
+      "domain": "身份与基础信息",
+      "subcategory": "个性特质",
+      "subject": "性格测评结果",
+      "change": "INTJ",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH10",
+      "op": "create",
+      "domain": "身份与基础信息",
+      "subcategory": "外貌特征",
+      "subject": "佩戴习惯",
+      "change": "日常戴黑框眼镜",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    }
+  ]
+}

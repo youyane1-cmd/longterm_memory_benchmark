@@ -1,0 +1,44 @@
+person_id: P001
+round_id: v0
+
+states:
+  - domain: 身份与基础信息
+    subcategory: 姓名称谓
+    field: legal_name
+    mutable: false
+    value: 林晓
+  - domain: 身份与基础信息
+    subcategory: 姓名称谓
+    field: nickname
+    mutable: false
+    value: 小晓
+  - domain: 身份与基础信息
+    subcategory: 出生信息
+    field: birth_date
+    mutable: false
+    value: "1997-05-18"
+  - domain: 身份与基础信息
+    subcategory: 出生信息
+    field: birthplace
+    mutable: false
+    value: 青岛
+  - domain: 身份与基础信息
+    subcategory: 性别
+    field: gender
+    mutable: false
+    value: 女
+  - domain: 身份与基础信息
+    subcategory: 国籍归属
+    field: nationality
+    mutable: false
+    value: 中国
+  - domain: 身份与基础信息
+    subcategory: 国籍归属
+    field: hometown
+    mutable: false
+    value: 山东青岛
+  - domain: 身份与基础信息
+    subcategory: 居住地址
+    field: address
+    mutable: true
+    value: 苏州工业园区

@@ -1,0 +1,99 @@
+{
+  "plan_id": "TP-P001-v9",
+  "person_id": "P001",
+  "person_summary": "用户法定姓名为林晓，现居地为苏州工业园区。用户父母居住地为青岛。用户本科毕业院校为青岛大学，本科主修专业为计算机科学与技术。用户每月房租为3500元，住房类型为租住两室一厅。用户日常通勤为地铁。用户持有手机为iPhone 14 Pro Max和iPhone 13。",
+  "round_id": "v9",
+  "horizon": "3_months",
+  "changes": [
+    {
+      "change_id": "CH01",
+      "op": "update",
+      "domain": "社交与通讯",
+      "subcategory": "社交平台",
+      "subject": "活跃社交平台",
+      "change": "微信视频号",
+      "reason": "上一阶段value为【小红书】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH02",
+      "op": "update",
+      "domain": "社交与通讯",
+      "subcategory": "通讯偏好",
+      "subject": "主要联系渠道",
+      "change": "微信文字消息 → 微信语音消息",
+      "reason": "上一阶段value为【微信文字消息】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH03",
+      "op": "create",
+      "domain": "社交与通讯",
+      "subcategory": "社群与圈子",
+      "subject": "加入的校友社群",
+      "change": "青岛大学苏州校友群",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH04",
+      "op": "create",
+      "domain": "社交与通讯",
+      "subcategory": "社交平台",
+      "subject": "内容发布主题",
+      "change": "通勤与城市生活记录",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH05",
+      "op": "update",
+      "domain": "旅行与出行",
+      "subcategory": "交通出行方式",
+      "subject": "日常通勤",
+      "change": "地铁 → 地铁+步行",
+      "reason": "上一阶段value为【地铁】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH06",
+      "op": "update",
+      "domain": "旅行与出行",
+      "subcategory": "酒店住宿",
+      "subject": "住宿偏好",
+      "change": "优先选择连锁商务酒店 → 优先选择地铁站附近的连锁商务酒店",
+      "reason": "上一阶段value为【优先选择连锁商务酒店】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH07",
+      "op": "update",
+      "domain": "财务与资产",
+      "subcategory": "银行账户",
+      "subject": "持有银行卡",
+      "change": "工商银行储蓄卡",
+      "reason": "上一阶段value为【招商银行储蓄卡、建设银行储蓄卡】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH08",
+      "op": "create",
+      "domain": "财务与资产",
+      "subcategory": "投资理财",
+      "subject": "持有基金",
+      "change": "沪深300指数基金",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH09",
+      "op": "update",
+      "domain": "生活习惯",
+      "subcategory": "运动习惯",
+      "subject": "固定运动",
+      "change": "每周游泳一次 → 每周游泳两次",
+      "reason": "上一阶段value为【每周游泳一次】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH10",
+      "op": "create",
+      "domain": "法律与记录",
+      "subcategory": "法律文件",
+      "subject": "现行租房合同",
+      "change": "苏州工业园区两室一厅续租合同",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    }
+  ]
+}

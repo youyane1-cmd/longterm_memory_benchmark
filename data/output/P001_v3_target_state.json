@@ -1,0 +1,99 @@
+{
+  "plan_id": "TP-P001-v3",
+  "person_id": "P001",
+  "person_summary": "用户法定姓名为林晓，现居地为苏州工业园区。用户父母居住地为青岛。用户本科毕业院校为青岛大学，本科主修专业为计算机科学与技术。用户每月房租为3500元，住房类型为租住两室一厅。用户日常通勤为地铁。用户持有手机为iPhone 14 Pro Max和iPhone 13。",
+  "round_id": "v3",
+  "horizon": "3_months",
+  "changes": [
+    {
+      "change_id": "CH01",
+      "op": "create",
+      "domain": "信仰与价值观",
+      "subcategory": "核心价值观",
+      "subject": "生活优先级",
+      "change": "健康优先于加班收入",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH02",
+      "op": "create",
+      "domain": "信仰与价值观",
+      "subcategory": "政治倾向",
+      "subject": "公共议题关注",
+      "change": "关注城市公共交通与通勤效率",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH03",
+      "op": "update",
+      "domain": "教育经历",
+      "subcategory": "培训与认证",
+      "subject": "在线课程学习",
+      "change": "CS50 Python课程",
+      "reason": "上一阶段value为【Coursera机器学习课程】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH04",
+      "op": "create",
+      "domain": "教育经历",
+      "subcategory": "培训与认证",
+      "subject": "认证考试结果",
+      "change": "大学英语六级已通过",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH05",
+      "op": "update",
+      "domain": "身份与基础信息",
+      "subcategory": "居住地址",
+      "subject": "现居地",
+      "change": "苏州工业园区 → 苏州高新区",
+      "reason": "上一阶段value为【苏州工业园区】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH06",
+      "op": "create",
+      "domain": "身份与基础信息",
+      "subcategory": "联系方式",
+      "subject": "常用邮箱",
+      "change": "linxiao.work@outlook.com",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH07",
+      "op": "update",
+      "domain": "家庭与社会关系",
+      "subcategory": "朋友与社交关系",
+      "subject": "同城朋友",
+      "change": "苏州有一位公司同事朋友",
+      "reason": "上一阶段value为【苏州有一位本科校友朋友】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH08",
+      "op": "create",
+      "domain": "家庭与社会关系",
+      "subcategory": "关系状态与质量",
+      "subject": "与父母联系频率",
+      "change": "每周视频通话一次",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH09",
+      "op": "update",
+      "domain": "财务与资产",
+      "subcategory": "银行账户",
+      "subject": "持有银行卡",
+      "change": "中国银行储蓄卡",
+      "reason": "上一阶段value为【招商银行储蓄卡、建设银行储蓄卡】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH10",
+      "op": "create",
+      "domain": "财务与资产",
+      "subcategory": "财务规划",
+      "subject": "月度储蓄目标",
+      "change": "每月固定储蓄3000元",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    }
+  ]
+}

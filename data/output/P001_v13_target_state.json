@@ -1,0 +1,99 @@
+{
+  "plan_id": "TP-P001-v13",
+  "person_id": "P001",
+  "person_summary": "用户法定姓名为林晓，现居地为苏州工业园区。用户父母居住地为青岛。用户本科毕业院校为青岛大学，本科主修专业为计算机科学与技术。用户每月房租为3500元，住房类型为租住两室一厅。用户日常通勤为地铁。用户持有手机为iPhone 14 Pro Max和iPhone 13。",
+  "round_id": "v13",
+  "horizon": "3_months",
+  "changes": [
+    {
+      "change_id": "CH01",
+      "op": "update",
+      "domain": "居住与房产",
+      "subcategory": "房屋类型与产权",
+      "subject": "住房类型",
+      "change": "租住两室一厅 → 租住一室一厅",
+      "reason": "上一阶段value为【租住两室一厅】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH02",
+      "op": "update",
+      "domain": "居住与房产",
+      "subcategory": "装修与家居",
+      "subject": "书桌配置",
+      "change": "升降书桌 → L形升降书桌",
+      "reason": "上一阶段value为【升降书桌】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH03",
+      "op": "update",
+      "domain": "居住与房产",
+      "subcategory": "家电设备",
+      "subject": "新增厨房电器",
+      "change": "空气炸锅 → 微波炉",
+      "reason": "上一阶段value为【空气炸锅】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH04",
+      "op": "create",
+      "domain": "居住与房产",
+      "subcategory": "物业与社区",
+      "subject": "社区健身设施",
+      "change": "小区健身房",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH05",
+      "op": "update",
+      "domain": "宠物与动物",
+      "subcategory": "宠物日常",
+      "subject": "宠物玩具偏好",
+      "change": "橘猫偏好逗猫棒 → 橘猫偏好羽毛球玩具",
+      "reason": "上一阶段value为【橘猫偏好逗猫棒】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH06",
+      "op": "create",
+      "domain": "宠物与动物",
+      "subcategory": "宠物日常",
+      "subject": "宠物饮水设备",
+      "change": "橘猫使用循环饮水机",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH07",
+      "op": "update",
+      "domain": "社交与通讯",
+      "subcategory": "通讯偏好",
+      "subject": "主要联系渠道",
+      "change": "微信文字消息 → 微信语音通话",
+      "reason": "上一阶段value为【微信文字消息】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH08",
+      "op": "create",
+      "domain": "社交与通讯",
+      "subcategory": "社交平台",
+      "subject": "社交账号昵称",
+      "change": "林晓在苏州",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH09",
+      "op": "update",
+      "domain": "健康与医疗",
+      "subcategory": "身体指标",
+      "subject": "体重",
+      "change": "63kg → 62kg",
+      "reason": "上一阶段value为【63kg】，一个月个月后变更为新value。"
+    },
+    {
+      "change_id": "CH10",
+      "op": "create",
+      "domain": "身份与基础信息",
+      "subcategory": "外貌特征",
+      "subject": "发型",
+      "change": "中短发",
+      "reason": "上一阶段value为【空集合】，一个月个月后变更为新value。"
+    }
+  ]
+}
