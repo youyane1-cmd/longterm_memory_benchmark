@@ -151,8 +151,18 @@ longterm_memory_benchmark/
 │   │   ├── step3_0_0_dialogue_generate.py
 │   │   ├── step3_1_0_dialogue_extract.py
 │   │   ├── step3_2_0_dialogue_summary.py
-│   │   └── step3_3_0_dialogue_orchestrate.py
-│   ├── qa_gen/                     # IE、OD、TR、RJ、KU
+│   │   ├── step3_3_0_dialogue_orchestrate.py
+│   │   └── dialogue_prompt/                     # 画像、状态、事件与对话提示词
+│   ├── qa_gen/
+│   │   ├── base.py                              # 题型生成基类
+│   │   ├── materials.py                         # 加载出题原料
+│   │   ├── models.py                            # 候选、证据与问题记录
+│   │   ├── step1_0_gen_basic_qa.py              # 信息抽取（IE）
+│   │   ├── step1_1_gen_open_qa.py               # 开放域（OD）
+│   │   ├── step1_2_gen_temporal_qa.py           # 时间推理（TR）
+│   │   ├── step1_3_gen_reject_qa.py             # 拒答（RJ）
+│   │   ├── step1_4_gen_knowledge_update_qa.py   # 知识更新（KU）
+│   │   └── qa_prompt/                           # IE、OD、TR、RJ、KU 提示词
 │   └── utils/
 ├── data/
 │   ├── persons/                    # 初始人物画像
