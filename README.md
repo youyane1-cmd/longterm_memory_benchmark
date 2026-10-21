@@ -18,9 +18,17 @@
 - 状态、事件、会话、原话证据和问题使用同一条可追溯链路。
 - 人物可以继续增长；在 `v13` 出题后，仍然可以追加 `v14`、`v15`，并得到新的当前画像。
 
+## 系统架构
+
+![状态驱动的长期交互记忆 Benchmark 系统架构](docs/architecture.svg)
+
+每轮先从 16 个领域中确定 1 条主线和 4 条副线，规划 10 条 `create` / `update` 状态变化，再把变化编排为带日期的事件。对话由两个信息不对称的角色生成：User Agent 拥有人物摘要、历史事件、本次事件与状态变化，以及最近 10 条滚动摘要；Assistant Agent 不知道事件图和目标状态，只根据当前日期和已经发生的对话正常回应。对话原话必须覆盖目标状态，才能连同事实、事件和 turn 级证据一起提交。
+
+状态链、事件图和人物画像按版本累积；同一人物的 sessions、extracts 和 summaries 只追加、不重写。问答流水线不参与人物生长，只读取指定版本的冻结快照，因此可以先在任意版本出题，再继续把世界线增长到后续版本。
+
 ## 设计要点
 
-### 1. 状态规划，而不是直接续写对话
+### 状态规划驱动人物生长
 
 人物信息组织为：
 
@@ -30,50 +38,35 @@ domain → subcategory → subject → versions[]
 
 当前实现包含 16 个生活领域。每轮选取 1 条主线和 4 条副线，规划 10 条状态变化：
 
-- `create`：新增以前不存在的事实；
-- `update`：替换已有值；
-- 集合型 `update`：可以增加或移除其中一项；
-- 清空值：表达某个已有状态结束或不再成立。
+- `create` 新增事实；
+- `update` 替换已有值；
+- 集合型 `update` 可以增加或移除其中一项；
+- 清空值表示某个已有状态结束。
 
-旧值不会被覆盖删除，而是保留为历史版本。因此系统既能回答“现在是什么”，也能回答“以前是什么、什么时候变了、为什么变”。
+旧值不会被覆盖删除，而是保留为历史版本。因此系统既能回答“现在是什么”，也能回答“以前是什么、什么时候变了”。
 
-### 2. Domain 从生成阶段开始携带
+### Domain 从生成源头贯穿到出题材料
 
-`domain / subcategory / subject` 不是出题时再由模型猜测。它们从状态规划开始，继续进入目标变化、事件 `goal_state`、对话事实抽取和 QA candidate。这样可以按领域分析覆盖率、控制数据分布，也可以让题目继承其来源领域。
+`domain / subcategory / subject` 从状态规划开始，继续进入目标变化、事件 `goal_state`、对话事实抽取和 QA candidate，而不是在出题时重新猜测。这让领域覆盖可规划、数据分布可统计，问题也能继承来源领域。
 
-当前生成链路已经保留这些标签；最终发布用的 `QuestionRecord` 还需要把 candidate 中的 domain 写入 `meta`，当前仓库里的问题 JSONL 尚未序列化这个字段。
+当前生成链路已经保留这些标签；仓库现有的最终问题 JSONL 尚未把 domain 序列化到 `QuestionRecord.meta`。
 
-### 3. 两个信息不对称的对话角色
+### 信息不对称的 User–Assistant 对话
 
-- **User Agent** 扮演人物，看到人物摘要、已经发生的事件、本次需要暴露的事件和状态变化，以及最近 10 条滚动摘要。
-- **Assistant Agent** 只知道当前日期和已经发生的对话，看不到事件图与目标状态，因而只能像普通助手一样回应和追问。
+- **User Agent** 扮演人物，看到人物摘要、历史事件、本次事件与状态变化，以及最近 10 条滚动摘要。
+- **Assistant Agent** 只知道当前日期和已经发生的对话，看不到事件图与目标状态。
 
-这种信息差让状态变化通过求助、分享、吐槽、回忆等自然动机逐步暴露，而不是由双方照着同一份剧情脚本念出来。
+因此状态变化要通过求助、分享、吐槽或回忆等自然动机逐步暴露，而不是由双方照着同一份剧情脚本复述。
 
-### 4. 对话必须通过状态覆盖验证
+### 通过证据验证后才提交
 
-每个事件生成一段 12 turns 的对话。生成后抽取：
+每个事件生成一段 12 turns 的对话，再抽取用户事实、事件、滚动摘要和对应状态变化的 turn 级原话。原话未覆盖目标状态时，只重做当前对话；验证通过后才追加 session、extract 和 summary。
 
-- 用户事实；
-- 已发生事件；
-- 对应状态变化的 turn 级原话证据；
-- 本段滚动摘要。
+### 画像与问题都从状态链计算
 
-如果原话没有覆盖目标状态，这段对话不会提交，而是按同一事件重新生成。通过后，session、extract 和 summary 才会追加到该人物的历史中。
+每条状态链的最后一个版本组成指定轮次的人物画像。画像不是重新概括全部聊天得到的模糊摘要，而是可计算、可比较、可追溯的结构化快照。
 
-### 5. 最终人物画像可以直接恢复
-
-每条状态链的最后一个版本组成指定轮次的人物画像。因此人物画像不是重新概括全部聊天得到的一段模糊摘要，而是一个可计算、可比较、可追溯的结构化快照。
-
-生成和出题是两条独立流水线：对话流水线负责让人物生长；QA 流水线读取某个冻结版本的状态链、会话和证据，再生成信息抽取、开放域、时间推理、拒答和知识更新问题。
-
-## 系统架构
-
-![状态驱动的长期交互记忆 Benchmark 系统架构](docs/architecture.svg)
-
-每轮先从 16 个领域中确定 1 条主线和 4 条副线，规划 10 条 `create` / `update` 状态变化，再把变化编排为带日期的事件。对话由两个信息不对称的角色生成：User Agent 拥有人物摘要、历史事件、本次事件与状态变化，以及最近 10 条滚动摘要；Assistant Agent 不知道事件图和目标状态，只根据当前日期和已经发生的对话正常回应。对话原话必须覆盖目标状态，才能连同事实、事件和 turn 级证据一起提交。
-
-状态链、事件图和人物画像按版本累积；同一人物的 sessions、extracts 和 summaries 只追加、不重写。问答流水线不参与人物生长，只读取指定版本的冻结快照，因此可以先在任意版本出题，再继续把世界线增长到后续版本。
+对话流水线负责让人物生长；QA 流水线只读取某个冻结版本的状态链、会话和证据。题型不会反向控制人物生成。
 
 ## 从初始人物画像到最终人物画像
 
@@ -83,19 +76,74 @@ P001 最初只有 9 条基础事实。经过 13 轮生长，最终形成 79 个�
 
 房租、手机、薪资、住房和联系方式等事实可以多次变化。每个版本都能继续追溯到事件、会话、具体 turn 和原始文本，使 Benchmark 同时具备当前画像、知识更新、时间推理和证据核验能力。
 
+## 快速开始
+
+安装项目：
+
+```bash
+pip install -e .
+```
+
+模型、接口地址和密钥默认读取 `AZURE_OPENAI_MODEL`、`OPENAI_BASE_URL`、`OPENAI_API_KEY`。
+
+```bash
+# 查看可选领域
+ltm list-domains
+
+# 从 v0 开始，持续生成到 v13
+ltm dialogue --to-round 13
+
+# 从 v13 冻结快照生成单跳问题
+ltm qa --planning-round v13 --hop single --limit 40
+
+# 生成多跳问题
+ltm qa --planning-round v13 --hop multi --model deepseek-v4-pro --limit 40
+```
+
+也可以直接调用：
+
+```py
+from longterm_memory_benchmark import run_dialogue, run_qa
+```
+
+`ltm` 对应 `cli.py` 中的 `main`，也可以使用 `python -m longterm_memory_benchmark`。`--planning-round 13` 会自动转换为 `v13`。
+
+## 生成结果
+
+### 对话与人物材料
+
+`run_dialogue` 按版本迭代，每轮依次处理人物画像、目标状态、时间窗口、事件图、对话、事实抽取与摘要。
+
+- `{person}_v{n}_profile_data.json`：该轮最终人物画像；
+- `{person}_v{n}_planning_state.json`：截至该轮的全部状态链；
+- `{person}_v{n}_target_state.json`：本轮必须实现的状态变化；
+- `{person}_v{n}_time_event_graph.json`：截至该轮的完整事件图；
+- `{person}_dialogue_sessions.json`：该人物的全部会话；
+- `{person}_dialogue_extracts.jsonl`：事实、事件和 turn 证据；
+- `{person}_dialogue_summaries.jsonl`：全部滚动摘要。
+
+### Benchmark 问题
+
+`run_qa` 读取指定轮次的冻结材料，生成带标准答案、推理过程和证据引用的问题。每完成一条就写入 `{person}_{hop}_questions.jsonl`，同一个 `question_id` 只保留最新结果。
+
+- `information_extraction`：单跳事实读取；多跳聚合同一状态链的历史版本；
+- `open_domain`：人物记忆与外部常识结合；
+- `temporal`：依据 session 时间解释相对时间；
+- `reject`：目标信息在记忆中不存在时拒答；
+- `knowledge_update`：从多个历史版本中确定当前值。
+
+当前多跳默认生成 `information_extraction` 和 `knowledge_update`。`query_time` 是提问时的“现在”；`session_time` 是历史对话发生的日期。
+
 ## 项目结构
 
 ```text
 longterm_memory_benchmark/
-├── pyproject.toml                  # 安装配置，注册命令 ltm
-├── __main__.py                     # python -m longterm_memory_benchmark
-├── cli.py                          # 命令行：dialogue、qa、list-domains
-├── run_dialogue.py                 # 对话流水线入口
-├── run_qa.py                       # 问答流水线入口
+├── cli.py                          # dialogue、qa、list-domains
+├── run_dialogue.py                 # 人物与对话生成入口
+├── run_qa.py                       # Benchmark 问题生成入口
 ├── llm_client.py                   # OpenAI 兼容接口
 ├── src/
-│   ├── api.py                      # 对外统一导入
-│   ├── dialogue_gen/               # 对话生成
+│   ├── dialogue_gen/
 │   │   ├── step0_0_0_person_profile.py
 │   │   ├── step1_0_0_target_state.py
 │   │   ├── step1_1_0_time_plan.py
@@ -103,85 +151,24 @@ longterm_memory_benchmark/
 │   │   ├── step3_0_0_dialogue_generate.py
 │   │   ├── step3_1_0_dialogue_extract.py
 │   │   ├── step3_2_0_dialogue_summary.py
-│   │   ├── step3_3_0_dialogue_orchestrate.py
-│   │   └── dialogue_prompt/        # 档案、目标、事件图、对话提示词
-│   ├── qa_gen/                     # 问答生成
-│   │   ├── materials.py            # 读取人物材料，组装单跳与更新链
-│   │   ├── models.py               # 候选、题目、证据
-│   │   ├── base.py                 # 生成器共用流程
-│   │   ├── step1_0_gen_basic_qa.py             # 信息抽取
-│   │   ├── step1_1_gen_open_qa.py              # 开放域
-│   │   ├── step1_2_gen_temporal_qa.py          # 时间推理
-│   │   ├── step1_3_gen_reject_qa.py            # 拒答
-│   │   ├── step1_4_gen_knowledge_update_qa.py  # 知识更新
-│   │   └── qa_prompt/              # IE、OD、TR、RJ、KU 提示词
-│   └── utils/                      # JSON / YAML 读写
+│   │   └── step3_3_0_dialogue_orchestrate.py
+│   ├── qa_gen/                     # IE、OD、TR、RJ、KU
+│   └── utils/
 ├── data/
-│   ├── persons/                    # 人物种子与初始画像
-│   ├── output/                     # 对话流水线产物
-│   └── qa/                         # 问答 jsonl
-└── extra_doc/                      # 早期服务端试验代码
+│   ├── persons/                    # 初始人物画像
+│   ├── output/                     # 状态、事件、会话与证据
+│   └── qa/                         # 问题 JSONL
+└── docs/                           # 架构图与人物数据卡片
 ```
 
-## 对话流水线
+## 当前实现边界
 
-`run_dialogue` 按版本迭代。每一轮先保存再载入，顺序是：
+- 一轮覆盖一个月，并规划 10 条状态变化。
+- 一段会话固定为 12 turns；状态覆盖失败最多重新生成 3 次。
+- Domain 已贯穿状态、事件、抽取和 QA candidate，最终问题记录尚未序列化该字段。
+- 多跳开放域、时间推理和拒答尚未实现。
 
-1. 人物档案
-2. 目标状态与领域规划
-3. 时间计划
-4. 时间事件图
-5. 按事件生成对话、抽取事实、写摘要
+## 参考
 
-`data/output` 里的主要文件：
-
-| 文件 | 内容 |
-| --- | --- |
-| `{person}_v{n}_profile_data.json` | 该轮结构化画像 |
-| `{person}_v{n}_person_profile.txt` | 该轮人物摘要 |
-| `{person}_v{n}_planning_state.json` | 规划状态 |
-| `{person}_v{n}_target_state.json` | 目标状态 |
-| `{person}_v{n}_time_event_graph.json` | 时间事件图 |
-| `{person}_dialogue_sessions.json` | 全部对话 |
-| `{person}_dialogue_extracts.jsonl` | 事实抽取 |
-| `{person}_dialogue_summaries.jsonl` | 对话摘要 |
-
-## 问答流水线
-
-`run_qa` 只加载一次人物材料，再按题型生成。每完成一条就追加到 `{person}_{hop}_questions.jsonl`，同一个 `question_id` 只保留最新一行。
-
-| 题型 | 模板 | 单跳 | 多跳 |
-| --- | --- | --- | --- |
-| `information_extraction` | IE-S / IE-M | 直接询问一个事实 | 询问同一事实项历史上出现过的全部值 |
-| `open_domain` | OD-S | 个人前提加可核查的外部知识 | 未实现 |
-| `temporal` | TR-S | 由对话时间换算出的事件时间 | 未实现 |
-| `reject` | RJ-S | 提问时记忆中不存在该信息 | 未实现 |
-| `knowledge_update` | KU-M | 无单跳形态 | 询问更新链最后的当前状态 |
-
-`query_time` 是提问时的“现在”，问题里的相对时间以它为准。`session_time` 是历史对话发生的日期，原话里的相对时间以它为准。
-
-## 命令行
-
-在本目录执行一次 `pip install -e .`。之后可在任意目录运行。模型、接口地址和密钥默认读环境变量 `AZURE_OPENAI_MODEL`、`OPENAI_BASE_URL`、`OPENAI_API_KEY`。
-
-```bash
-ltm list-domains
-
-ltm dialogue --to-round 13
-
-ltm qa --planning-round v13 --hop single --limit 40
-
-ltm qa --planning-round v13 --hop multi --model deepseek-v4-pro --limit 40
-```
-
-`ltm` 就是 `cli.py` 里的 `main`。不通过脚本时，用 `python -m longterm_memory_benchmark`，后面的子命令相同。
-
-`--planning-round 13` 会写成 `v13`。单跳不指定 `--abilities` 时跑全部已注册题型。多跳不指定时只跑 `information_extraction` 和 `knowledge_update`。
-
-Python 里也可以直接调用：
-
-```python
-from longterm_memory_benchmark import run_dialogue, run_qa
-```
-
-问答相关类型从 `longterm_memory_benchmark.src.api` 导入。
+- [LoCoMo: Evaluating Very Long-Term Conversational Memory of LLM Agents](https://arxiv.org/abs/2402.17753)
+- [LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory](https://arxiv.org/abs/2410.10813)
